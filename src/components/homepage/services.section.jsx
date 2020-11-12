@@ -45,32 +45,30 @@ export default function ServicesSection() {
     <section className="content-section services" id="island">
       <div className="container">
         <div className="row">
-          {servicesData.map((service) => {
+          {servicesData.map((service, index) => {
             const { icon, title, content } = service;
 
             return (
-              <>
-                <div className="col-12 col-sm-6 col-md-4">
-                  <div className="wrapper">
-                    <p
-                      className="service-icon"
-                      style={{
-                        background: `url(/${icon}.svg) #01CD9E center no-repeat`
-                      }}
-                    ></p>
-                    <h3 className="service-title">{title}</h3>
-                    <p
-                      className="info"
-                      dangerouslySetInnerHTML={{ __html: content }}
-                    ></p>
-                    <p>
-                      <a href="/about-us" className="button">
-                        Read More
-                      </a>
-                    </p>
-                  </div>
+              <div className="col-12 col-sm-6 col-md-4" key={index}>
+                <div className="wrapper">
+                  <p
+                    className="service-icon"
+                    style={{
+                      background: `url(/${icon}.svg) #01CD9E center no-repeat`
+                    }}
+                  ></p>
+                  <h3 className="service-title">{title}</h3>
+                  <p
+                    className="info"
+                    dangerouslySetInnerHTML={{ __html: content }}
+                  ></p>
+                  <p>
+                    <a href="/about-us" className="button">
+                      Read More
+                    </a>
+                  </p>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
