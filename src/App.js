@@ -3,10 +3,11 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./styles.scss";
 
+import * as pages from "./pages";
 import Navigation from "./components/navigation";
 // import Footer from "./Components/Footer";
 
-function App() {
+export default function App() {
   let settings = require("./data/settings.json");
 
   const scrollWithOffset = (el) => {
@@ -23,8 +24,7 @@ function App() {
           exact
           path="/"
           render={(props) => (
-            <h1>Homepage</h1>
-            // <HomePage {...props} {...(settings && { settings })} />
+            <pages.HomePage {...props} {...(settings && { settings })} />
           )}
         />
       </Switch>
@@ -35,5 +35,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

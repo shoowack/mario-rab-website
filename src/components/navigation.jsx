@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navigation({ scrollWithOffset }) {
@@ -42,7 +42,7 @@ export default function Navigation({ scrollWithOffset }) {
               <Link
                 className="nav-link"
                 smooth
-                to="/#download"
+                to="/#rab-island"
                 onClick={() => handleNavCollapse()}
                 scroll={(el) => scrollWithOffset(el)}
               >
