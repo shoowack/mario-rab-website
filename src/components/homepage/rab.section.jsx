@@ -2,12 +2,18 @@ import React from "react";
 
 export default function RabSection() {
   return (
-    <div className="container" id="rab-island">
-      <div className="row">
-        <div className="col-md-12">
-          <h3 className="my-5">Rab island</h3>
+    <section className="rab">
+      <div className="container">
+        <div className="col-md-8">
+          rab_text
+          <p className="cta-button">
+            <a href="rab_cta_read_more_link" className="button">
+              rab_cta_read_more
+            </a>
+          </p>
         </div>
       </div>
-    </div>
+      <div className="onama-bg hero"></div>
+    </section>
   );
 }

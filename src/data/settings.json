@@ -1,7 +1,11 @@
 {
   "homePage": {
     "visibileSections": {
-      "rabSection": true
+      "rabSection": true,
+      "bookingFormSection": true,
+      "loparSection": true,
+      "servicesSection": true,
+      "apartmentsSection": true
     }
   }
 }
