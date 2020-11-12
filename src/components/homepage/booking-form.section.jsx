@@ -9,11 +9,11 @@ export default function BookingFormSection() {
             <div className="custom-list tab-content-list">
               <div className="tab-content active default-form">
                 <form
-                  action=""
-                  method="post"
-                  enctype="multipart/form-data"
-                  name="form1"
-                  id="form1"
+                // action=""
+                // method="post"
+                // enctype="multipart/form-data"
+                // name="form1"
+                // id="form1"
                 >
                   <span className="email-input">
                     <input

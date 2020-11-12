@@ -1,0 +1,324 @@
+@import "bootstrap/scss/bootstrap-grid.scss";
+
+section {
+  position: relative;
+  height: auto;
+
+  *:before,
+  *:after {
+    content: '';
+  }
+
+  &.apartment1,
+  &.apartment2,
+  &.apartment3 {
+    padding: 5em 0;
+
+    .col-md-6 {
+      z-index: 1;
+    }
+  }
+
+  .apartment1-bg {
+    background: transparent url("./apartman1/01.jpg") left center no-repeat;
+    background-size: cover;
+  }
+
+  .apartment3-bg {
+    background: transparent url("./apartman3/01.jpg") left center no-repeat;
+    background-size: cover;
+  }
+
+  &.apartment1 {
+    background: var(--apartment1);
+
+    .hero {
+      &:after {
+        //@include gradient-horizontal-three-colors($start-color: $apartment1, $mid-color: rgba($apartment1, .8), $color-stop: 30%, $end-color: rgba($apartment1, 0));
+      }
+    }
+  }
+  
+  &.apartment3 {
+    background: var(--apartment3);
+
+    .hero {
+      &:after {
+        //@include gradient-horizontal-three-colors($start-color: $apartment3, $mid-color: rgba($apartment3, .8), $color-stop: 30%, $end-color: rgba($apartment3, 0));
+      }
+    }
+  }
+
+  &.apartment1,
+  &.apartment3 {
+    // color: darken(var(--white), 5%);
+
+    h2 {
+      color: var(--white);
+    }
+
+    .hero {
+      right: 0;
+      width: 70%;
+
+      &:after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &.apartment2 {
+    background: var(--apartment2);
+    // color: darken(var(--white), 5%);
+
+    h2 {
+      color: $white;
+    }
+
+    .button {
+      background-color: var(--apartment1);
+    }
+
+    .apartment2-bg {
+      background: transparent url("./apartman2/01.jpg") left center no-repeat;
+      background-size: cover;
+    }
+
+    .hero {
+      left: 0;
+      width: 70%;
+
+      &:after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        //@include gradient-horizontal-three-colors($start-color: rgba($apartment2, 0), $mid-color: rgba($apartment2, .8), $color-stop: 70%, $end-color: $apartment2);
+      }
+    }
+  }
+}
+
+#browse {
+  background-color: var(--white);
+  padding: 40px 0 60px;
+
+  .browse-members {
+    &-header {
+      margin-bottom: 18px;
+    }
+
+    &-search {
+      position: relative;
+      float: left;
+      
+      form {
+        margin: 0;
+      }
+
+      input {
+        width: 250px;
+      }
+
+      .fa {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        font-size: 18px;
+      }
+    }
+
+    &-pagination {
+      float: right;
+      width: 120px;
+      text-align: right;
+      
+      form {
+        margin: 0;
+        
+        .select-box {
+          text-align: left;
+        }
+      }
+    }
+
+    &-list {
+      margin: 0 -12px;
+      
+      .member {
+        float: left;
+        margin: 12px;
+        padding-bottom: 12px;
+        width: 160px;
+        text-align: center;
+        border-radius: 7px;
+        
+        &-name, &-place {
+          margin: 0;
+          font-size: 1em;
+        }
+      }
+
+      .first-in-row {
+        clear: left;
+      }
+
+      .member-portrait {
+        display: block;
+        margin-bottom: 12px;
+        border: 0;
+
+        img {
+          display: block;
+          border-radius: 5px 5px 0 0;
+        }
+      }
+    }
+  }
+
+  .browse-properties {
+    .tab-title {
+      margin-right: 10px;
+
+      a {
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+      }
+
+      &:hover {
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+
+    .tab-content-list {
+      padding: 10px 0 0 0;
+      border: 0;
+    }
+  }
+
+  .browse-tabs-container {
+    .tab-title {
+      background-color: #FFF;
+
+      a {
+        color: rgba(var(--main_color), 1);
+      }
+
+      &.active {
+        background-color: var(--main_highlight_color);
+
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  .browse-inner {
+    margin-top: 50px;
+  }
+
+  .browse-contents {
+    padding: 30px;
+    border-width: 3px 0 0 0;
+  }
+
+  .browse-destinations {
+    .row {
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .top-destination {
+      position: relative;
+      height: 220px;
+      border-radius: 7px;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      margin-bottom: 1em;
+      box-shadow: 0 2px 0 #222, 0 45px 100px rgba(0, 0, 0, 0.4);
+      transition: all .5s;
+      //overflow: hidden;
+
+      &:hover {
+        margin-top: -1em;
+        box-shadow: 0 2px 0 #222, 0 60px 130px rgba(0, 0, 0, 0.2);
+        transition: all .5s;
+
+        > .top-destination-inner {
+          transition: all .5s;
+          transform: scale(1.05);
+          box-shadow: 0 2px 0 #222, 0 3px 0 rgba(0,0,0,.25) inset;
+          bottom: -.5em;
+          //bottom: -80px;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        border-radius: inherit;
+        display: block;
+        left: 1px;
+        top: 1px;
+        width: calc( 100% - 2px );
+        height: calc( 100% - 2px );
+        box-shadow: 0 1px 1px 0px rgba(255,255,255,.25) inset;
+      }
+
+      &-inner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        //padding: 27px 150px 27px 20px; // to the left
+        border-radius: 0 0 7px 7px;
+        padding: 20px;
+        background-color: rgba(var(--main_color), .5);
+        transition: all .5s;
+
+        :after {
+          display: table;
+          clear: both;
+          content: "";
+          line-height: 0;
+        }
+
+        h3 {
+          margin: 0;
+          color: #FFF;
+        }
+      }
+
+      // Anchor will cover the whole item by default
+      > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+
+      .destination-thumb {
+        display: none;
+      }
+    }
+  }
+}

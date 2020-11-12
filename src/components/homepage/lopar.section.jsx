@@ -1,4 +1,5 @@
 import React from "react";
+import "./lopar-rab.scss";
 
 export default function LoparSection() {
   return (

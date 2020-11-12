@@ -1,4 +1,5 @@
 import React from "react";
+import "./apartments.scss";
 
 export default function ApartmentsSection() {
   return (
