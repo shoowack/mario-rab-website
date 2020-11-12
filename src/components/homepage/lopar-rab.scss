@@ -49,12 +49,12 @@ section {
     }
   }
 
-  &.rab {
+  &.rab  {
     background: var(--white);
     color: #555;
 
     .onama-bg {
-      background: transparent url(/rab.jpg) left center no-repeat;
+      // background: transparent url(/rab.jpg) left center no-repeat;
       background-size: cover;
     }
 
@@ -86,7 +86,7 @@ section {
     color: #555;
 
     .onama-bg {
-      background: transparent url(/lopar.jpg) right center no-repeat;
+      // background: transparent url(/lopar.jpg) right center no-repeat;
       background-size: cover;
     }
 

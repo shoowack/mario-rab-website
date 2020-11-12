@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="43px" height="46px" viewBox="0 0 43 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>scuba-diving</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="scuba-diving" sketch:type="MSArtboardGroup" transform="translate(-3.000000, -1.000000)" fill="#FFFFFF">
+            <path d="M8.49,33.263 L8.49,38.035 C8.49,42.978 12.511,47 17.455,47 L23.49,47 C25.147,47 26.49,45.657 26.49,44 C26.49,42.343 25.147,41 23.49,41 L17.455,41 C15.82,41 14.49,39.67 14.49,38.035 L14.49,33.699 C13.797,33.817 13.094,33.898 12.374,33.898 C11.016,33.898 9.712,33.67 8.49,33.263 Z M14.49,9.039 L14.49,4 C14.49,2.343 13.147,1 11.49,1 C9.833,1 8.49,2.343 8.49,4 L8.49,9.736 C9.752,9.295 11.094,9.043 12.484,9.043 L14.49,9.039 Z M36.413,12 L12.49,12.043 C7.49,12.043 3,16.277 3,21.476 C3,26.675 7.176,30.899 12.374,30.899 C15.439,30.899 18.141,29.438 19.857,27.171 C20.89,25.807 22.49,25 24.202,25 L24.224,25 C26.06,25 27.794,25.847 28.925,27.294 C30.647,29.495 33.323,30.91 36.334,30.91 C41.532,30.91 45.786,26.653 45.786,21.455 C45.786,16.257 41.611,12 36.413,12 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
