@@ -49,7 +49,7 @@ export default function ServicesSection() {
             const { icon, title, content } = service;
 
             return (
-              <div className="col-12 col-sm-6 col-md-4" key={index}>
+              <div className="col-12 col-sm-6 col-md-4 mt-4" key={index}>
                 <div className="wrapper">
                   <p
                     className="service-icon"

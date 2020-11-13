@@ -1,7 +1,8 @@
 :root {
-  --white: #ffffff;
-  --white-rgb: 255,255,255;
-  --grey:                          darken(var(--white), 5%);
+  --white:                       #ffffff;
+  --white-rgb:                     255,255,255;
+  --grey:                          #f2f2f2;
+  --grey-rgb:                      242,242,242;
   --main_color:                    darken(#1E1E24, 0%);
   --main_color_transparent:        rgba($main_color, .9);
   --main_color_darken:             darken($main_color, 15%);
