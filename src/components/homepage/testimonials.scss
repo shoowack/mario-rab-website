@@ -1,0 +1,66 @@
+#testimonials {
+  position: relative;
+  padding: 130px 0;
+  z-index: 10;
+  color: #FFF;
+  background: #72656c;
+  // background: #72656c url('../_ostalo/dummies/testimonials_bg.jpg') center center no-repeat;
+  background-size: cover;
+
+  .testimonials {
+    &-inner {
+      position: relative;
+      padding-left: 290px;
+    }
+  }
+
+  .active-portrait {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    margin: 0;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    -moz-box-shadow: 0 3px 0 #d9d9d9;
+    -webkit-box-shadow: 0 3px 0 #d9d9d9;
+    box-shadow: 0 3px 0 #d9d9d9;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .testimonial {
+    .portrait {
+      display: none;
+    }
+    blockquote {
+      > p {
+        font-size: 2.25em;
+        line-height: 1.3em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      cite {
+        display: block;
+        margin-top: 12px;
+        font-size: 1.125em;
+      }
+    }
+  }
+
+  .navigation {
+    margin-top: 24px;
+
+    button {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

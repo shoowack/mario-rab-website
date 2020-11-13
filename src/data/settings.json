@@ -5,7 +5,8 @@
       "bookingFormSection": true,
       "loparSection": true,
       "servicesSection": true,
-      "apartmentsSection": true
+      "apartmentsSection": true,
+      "testimonialsSection": true
     }
   }
 }

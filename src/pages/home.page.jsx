@@ -10,7 +10,8 @@ export default function HomePage(props) {
           rabSection,
           loparSection,
           servicesSection,
-          apartmentsSection
+          apartmentsSection,
+          testimonialsSection
         }
       }
     }
@@ -23,6 +24,7 @@ export default function HomePage(props) {
       {loparSection && <section.LoparSection />}
       {servicesSection && <section.ServicesSection />}
       {apartmentsSection && <section.ApartmentsSection />}
+      {testimonialsSection && <section.TestimonialsSection />}
     </>
   );
 }
