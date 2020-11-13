@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import "./slick.scss";
-import "./slick-theme.scss";
+import "./../slick.scss";
+import "./../slick-theme.scss";
 import "./testimonials.scss";
 
 export default function TestimonialsSection() {
@@ -11,12 +11,13 @@ export default function TestimonialsSection() {
         <div className="testimonials-inner">
           <div className="testimonial-list">
             <Slider
-              dots
+              ref={(c) => (this.slider = c)}
               infinite
               speed={500}
               slidesToShow={1}
               slidesToScroll={1}
               initialSlide={0}
+              arrows={false}
             >
               <div className="testimonial">
                 <p className="portrait">
@@ -63,10 +64,16 @@ export default function TestimonialsSection() {
             </Slider>
 
             <div className="navigation">
-              <button className="button prev">
+              <button
+                className="button prev"
+                onClick={() => this.slider.slickPrev()}
+              >
                 <i className="fa fa-chevron-left"></i>
               </button>
-              <button className="button next ml-2">
+              <button
+                className="button next ml-2"
+                onClick={() => this.slider.slickNext()}
+              >
                 <i className="fa fa-chevron-right"></i>
               </button>
             </div>
