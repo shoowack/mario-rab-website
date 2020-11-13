@@ -45,12 +45,12 @@
 .page-header .breadcrumbs { color: #FFF; background-color: var(--main_color); }
 .page-header-nav a { color: var(--main_color); background-color: #FFF; }
 .page-header-nav .active a { color: #FFF; background-color: var(--main_highlight_color); }
-.page-about-us .page-header { background-image: url( '/page_header_01.jpg' ); }
+.page-about-us .page-header { background-image: url( './../../page_header_01.jpg' ); }
 .page-contact-us .page-header,
 .page-house-rules .page-header,
 .page-terms-conditions .page-header { background-image: url( './../../public/page_header_02.jpg' ); }
-.page-search-results .page-header { background-image: url( '/page_header_03.jpg' ); }
-.page-property-details .page-header { background-image: url( '/page_header_04.jpg' ); }
+.page-search-results .page-header { background-image: url( './../../page_header_03.jpg' ); }
+.page-property-details .page-header { background-image: url( './../../page_header_04.jpg' ); }
 
 .island {
   position: relative;
