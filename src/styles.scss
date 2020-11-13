@@ -1,5 +1,13 @@
 @import "colors.scss";
 
+body {
+  color: #999999;
+}
+
+a {
+  color: var(--main_highlight_color);
+}
+
 .button {
   display: inline-block;
   position: relative;

@@ -5,7 +5,7 @@ import "./styles.scss";
 
 import * as pages from "./pages";
 import Navigation from "./components/navigation";
-// import Footer from "./Components/Footer";
+import Footer from "./components/footer";
 
 export default function App() {
   let settings = require("./data/settings.json");
@@ -28,10 +28,10 @@ export default function App() {
           )}
         />
       </Switch>
-      {/* <Footer
+      <Footer
         scrollWithOffset={scrollWithOffset}
         {...(settings && { settings })}
-      /> */}
+      />
     </BrowserRouter>
   );
 }
