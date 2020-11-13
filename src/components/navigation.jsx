@@ -20,7 +20,7 @@ export default function Navigation({ scrollWithOffset }) {
         <Link
           className="navbar-brand"
           smooth
-          to="/#top"
+          to="/#"
           onClick={() => handleNavCollapse()}
           scroll={(el) => scrollWithOffset(el)}
         >
@@ -42,7 +42,7 @@ export default function Navigation({ scrollWithOffset }) {
               <Link
                 className="nav-link"
                 smooth
-                to="/#rab-island"
+                to="/rab-island#"
                 onClick={() => handleNavCollapse()}
                 scroll={(el) => scrollWithOffset(el)}
               >

@@ -1,4 +1,5 @@
 import React from "react";
+import "./booking-form.scss";
 
 export default function BookingFormSection() {
   return (

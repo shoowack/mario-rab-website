@@ -1,7 +1,10 @@
 @import "colors.scss";
+@import "forms.scss";
 
 body {
+  background: #f3f3f3;
   color: #999999;
+  padding-top: 56px;
 }
 
 a {

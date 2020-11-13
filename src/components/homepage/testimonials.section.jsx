@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
               <button className="button prev">
                 <i className="fa fa-chevron-left"></i>
               </button>
-              <button className="button next">
+              <button className="button next ml-2">
                 <i className="fa fa-chevron-right"></i>
               </button>
             </div>
