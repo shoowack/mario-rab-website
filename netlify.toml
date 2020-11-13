@@ -1,0 +1,5 @@
+# 404 redirect rule
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
