@@ -65,8 +65,6 @@ export default function TestimonialsSection() {
               </div>
             </Slider>
 
-            {console.log(slider)}
-
             <div className="navigation">
               <button
                 className="button prev"
