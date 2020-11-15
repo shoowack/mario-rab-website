@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "./../slick.scss";
 import "./../slick-theme.scss";
 import "./testimonials.scss";
 
 export default function TestimonialsSection() {
+  const slider = useRef(null);
+
   return (
     <div id="testimonials">
       <div className="container">
         <div className="testimonials-inner">
           <div className="testimonial-list">
             <Slider
-              ref={(c) => (this.slider = c)}
+              ref={slider}
               infinite
               speed={500}
               slidesToShow={1}
@@ -63,16 +65,18 @@ export default function TestimonialsSection() {
               </div>
             </Slider>
 
+            {console.log(slider)}
+
             <div className="navigation">
               <button
                 className="button prev"
-                onClick={() => this.slider.slickPrev()}
+                onClick={() => slider.current.slickPrev()}
               >
                 <i className="fa fa-chevron-left"></i>
               </button>
               <button
                 className="button next ml-2"
-                onClick={() => this.slider.slickNext()}
+                onClick={() => slider.current.slickNext()}
               >
                 <i className="fa fa-chevron-right"></i>
               </button>
