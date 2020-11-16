@@ -5,6 +5,7 @@
   margin-top: -100px;
   border-radius: 7px;
   box-shadow: 0 3px 0 #e6e6e6;
+  margin-bottom: 60px;
 }
 
 // #map {
@@ -24,10 +25,14 @@
 // }
 
 .page-header {
-  background-position: center; background-size: cover; padding-bottom: 0;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  // padding-bottom: 0;
 
   &-inner {
-    position: relative; height: 210px;
+    position: relative;
+    height: 210px;
   }
 }
 

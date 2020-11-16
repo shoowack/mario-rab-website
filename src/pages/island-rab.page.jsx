@@ -10,7 +10,7 @@ export default function IslandRabPage(props) {
         <div className="col-8 order-8">
           <div className="property-details">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 p-5">
                 <h2>island-rab-title</h2>
                 <h2>Rab's History and Heritage</h2>
                 Otok Rab bio je naseljen još u paleolitiku, starijem kamenom
