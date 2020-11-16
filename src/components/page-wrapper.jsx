@@ -15,7 +15,54 @@ export default function PageWrapper({ children, headerImage }) {
     zoom: 11
   };
 
+  // backgroundColor?: string;
+  // clickableIcons?: boolean;
+  // controlSize?: number;
+  // disableDefaultUI?: boolean;
+  // disableDoubleClickZoom?: boolean;
+  // draggable?: boolean;
+  // draggableCursor?: string;
+  // draggingCursor?: string;
+  // fullscreenControl?: boolean;
+  // fullscreenControlOptions?: { position: number };
+  // gestureHandling?: string;
+  // heading?: number;
+  // keyboardShortcuts?: boolean;
+  // mapTypeControl?: boolean;
+  // mapTypeControlOptions?: any;
+  // mapTypeId?: string;
+  // minZoom?: number;
+  // maxZoom?: number;
+  // noClear?: boolean;
+  // options?: (maps: Maps) => Props;
+  // panControl?: boolean;
+  // panControlOptions?: { position: number };
+  // rotateControl?: boolean;
+  // rotateControlOptions?: { position: number };
+  // scaleControl?: boolean;
+  // scaleControlOptions?: any;
+  // scrollwheel?: boolean;
+  // streetView?: any;
+  // streetViewControl?: boolean;
+  // streetViewControlOptions?: { position: number };
+  // styles?: MapTypeStyle[];
+  // tilt?: number;
+  // zoomControl?: boolean;
+  // ?: { position: number };
+
   const AnyReactComponent = ({ text }) => <div>{text}</div>;
+  let mapOptions = {
+    scrollwheel: false,
+    mapTypeControlOptions: {
+      position: "BOTTOM_RIGHT" // this makes the map type control disappear
+    },
+    draggable: false,
+    rotateControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    panControl: false,
+    zoomControlOptions: false
+  };
 
   return (
     <div id="core" className="page-property-details">
@@ -36,6 +83,7 @@ export default function PageWrapper({ children, headerImage }) {
                   bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_KEY }}
                   defaultCenter={loc.center}
                   defaultZoom={loc.zoom}
+                  options={mapOptions}
                 >
                   <AnyReactComponent
                     lat={loc.marker.lat}
