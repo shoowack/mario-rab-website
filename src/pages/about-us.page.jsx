@@ -5,7 +5,7 @@ import headerImg from "./../img/headers/page_header_03.jpg";
 
 export default function AboutUsPage(props) {
   return (
-    <div id="core" className="page-about-us">
+    <div>
       <div
         className="page-header has-nav"
         style={{ background: `url(${headerImg})` }}

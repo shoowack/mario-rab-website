@@ -19,30 +19,32 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Navigation scrollWithOffset={scrollWithOffset} />
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <pages.HomePage {...props} {...(settings && { settings })} />
-          )}
-        />
-        <Route
-          exact
-          path="/rab-island"
-          render={(props) => (
-            <pages.IslandRabPage {...props} {...(settings && { settings })} />
-          )}
-        />
-        <Route
-          exact
-          path="/about-us"
-          render={(props) => (
-            <pages.AboutUsPage {...props} {...(settings && { settings })} />
-          )}
-        />
-      </Switch>
+      <div style={{ flex: "1 0 auto" }}>
+        <Navigation scrollWithOffset={scrollWithOffset} />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <pages.HomePage {...props} {...(settings && { settings })} />
+            )}
+          />
+          <Route
+            exact
+            path="/rab-island"
+            render={(props) => (
+              <pages.IslandRabPage {...props} {...(settings && { settings })} />
+            )}
+          />
+          <Route
+            exact
+            path="/about-us"
+            render={(props) => (
+              <pages.AboutUsPage {...props} {...(settings && { settings })} />
+            )}
+          />
+        </Switch>
+      </div>
       <Footer
         scrollWithOffset={scrollWithOffset}
         {...(settings && { settings })}

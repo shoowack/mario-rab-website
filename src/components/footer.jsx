@@ -6,7 +6,7 @@ export default function Footer({ scrollWithOffset }) {
   const currentDate = new Date();
 
   return (
-    <footer>
+    <footer style={{ flexShrink: 0 }}>
       <section className="footer-info">
         <div className="container">
           <div className="row">
