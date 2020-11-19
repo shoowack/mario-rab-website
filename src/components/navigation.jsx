@@ -24,7 +24,7 @@ export default function Navigation({ scrollWithOffset }) {
           onClick={() => handleNavCollapse()}
           scroll={(el) => scrollWithOffset(el)}
         >
-          Home
+          Mario Rab
         </Link>
         <button
           className="navbar-toggler"
@@ -42,11 +42,33 @@ export default function Navigation({ scrollWithOffset }) {
               <Link
                 className="nav-link"
                 smooth
+                to="/#"
+                onClick={() => handleNavCollapse()}
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                smooth
                 to="/rab-island#"
                 onClick={() => handleNavCollapse()}
                 scroll={(el) => scrollWithOffset(el)}
               >
                 Island Rab
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                smooth
+                to="/about-us#"
+                onClick={() => handleNavCollapse()}
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                About us
               </Link>
             </li>
           </ul>

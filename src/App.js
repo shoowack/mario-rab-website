@@ -35,6 +35,13 @@ export default function App() {
             <pages.IslandRabPage {...props} {...(settings && { settings })} />
           )}
         />
+        <Route
+          exact
+          path="/about-us"
+          render={(props) => (
+            <pages.AboutUsPage {...props} {...(settings && { settings })} />
+          )}
+        />
       </Switch>
       <Footer
         scrollWithOffset={scrollWithOffset}
