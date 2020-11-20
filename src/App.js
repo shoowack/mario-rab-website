@@ -60,6 +60,13 @@ export default function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/terms-and-conditions"
+            render={(props) => (
+              <pages.TermsPage {...props} {...(settings && { settings })} />
+            )}
+          />
         </Switch>
       </div>
       <Route

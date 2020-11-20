@@ -8,7 +8,7 @@ export default function BreadcrumbsComponent(props) {
     "/about-us": "About us",
     "/contact-us": "Contact us",
     "/house-rules": "House rules",
-    "/terms": "Terms and Conditions"
+    "/terms-and-conditions": "Terms and Conditions"
   };
 
   return (
