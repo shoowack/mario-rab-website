@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./styles.scss";
+import "jquery";
 
 import * as pages from "./pages";
 import MainNavigation from "./components/main-navigation";
