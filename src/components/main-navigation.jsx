@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-export default function Navigation({ scrollWithOffset }) {
+export default function MainNavigation({ scrollWithOffset }) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = (el) => {

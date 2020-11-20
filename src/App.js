@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./styles.scss";
 
 import * as pages from "./pages";
-import Navigation from "./components/navigation";
+import MainNavigation from "./components/main-navigation";
 import Footer from "./components/footer";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div style={{ flex: "1 0 auto" }}>
-        <Navigation scrollWithOffset={scrollWithOffset} />
+        <MainNavigation scrollWithOffset={scrollWithOffset} />
         <Switch>
           <Route
             exact
@@ -43,11 +43,23 @@ export default function App() {
               <pages.AboutUsPage {...props} {...(settings && { settings })} />
             )}
           />
+          <Route
+            exact
+            path="/contact-us"
+            render={(props) => (
+              <pages.ContactUsPage {...props} {...(settings && { settings })} />
+            )}
+          />
         </Switch>
       </div>
-      <Footer
-        scrollWithOffset={scrollWithOffset}
-        {...(settings && { settings })}
+      <Route
+        render={(props) => (
+          <Footer
+            {...props}
+            scrollWithOffset={scrollWithOffset}
+            {...(settings && { settings })}
+          />
+        )}
       />
     </BrowserRouter>
   );
