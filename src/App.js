@@ -50,6 +50,16 @@ export default function App() {
               <pages.ContactUsPage {...props} {...(settings && { settings })} />
             )}
           />
+          <Route
+            exact
+            path="/house-rules"
+            render={(props) => (
+              <pages.HouseRulesPage
+                {...props}
+                {...(settings && { settings })}
+              />
+            )}
+          />
         </Switch>
       </div>
       <Route
