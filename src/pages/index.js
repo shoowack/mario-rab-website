@@ -4,6 +4,7 @@ import AboutUsPage from "./about-us.page";
 import ContactUsPage from "./contact-us.page";
 import HouseRulesPage from "./house-rules.page";
 import TermsPage from "./terms.page";
+import ApartmentPage from "./apartment.page";
 
 export {
   HomePage,
@@ -11,5 +12,6 @@ export {
   AboutUsPage,
   ContactUsPage,
   HouseRulesPage,
-  TermsPage
+  TermsPage,
+  ApartmentPage
 };

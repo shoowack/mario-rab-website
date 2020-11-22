@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>32 copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="32-copy-9" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-3.000000, 18.000000)"></g>
+            <path d="M2,27 L2,31 C2,31.5522847 1.55228475,32 1,32 C0.44771525,32 0,31.5522847 0,31 L0,9 C0,8.44771525 0.44771525,8 1,8 C1.55228475,8 2,8.44771525 2,9 L2,13.9881552 C3.07209129,13.3623277 4.48309488,13 6,13 C9.24184681,13 12,14.6548919 12,17 L28,17 C28.5163873,17 29.2209083,17.1174202 29.9472136,17.4805728 C31.2122923,18.1131121 32,19.2946737 32,21 L32,31 C32,31.5522847 31.5522847,32 31,32 C30.4477153,32 30,31.5522847 30,31 L30,27 L2,27 L2,27 Z M2,25 L2,19 L8,19 L8,25 L2,25 Z M30,25 L30,21 C30,20.0803263 29.6627077,19.5743879 29.0527864,19.2694272 C28.6540917,19.0700798 28.2336127,19 28,19 L10,19 L10,25 L30,25 Z M10,17 C10,16.0313996 8.28100068,15 6,15 C3.71899932,15 2,16.0313996 2,17 L10,17 L10,17 Z" id="Path" fill="#01CD9E" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

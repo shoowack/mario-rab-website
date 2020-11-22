@@ -39,6 +39,13 @@ export default function App() {
           />
           <Route
             exact
+            path="/apartment-1"
+            render={(props) => (
+              <pages.ApartmentPage {...props} {...(settings && { settings })} />
+            )}
+          />
+          <Route
+            exact
             path="/about-us"
             render={(props) => (
               <pages.AboutUsPage {...props} {...(settings && { settings })} />
