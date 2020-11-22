@@ -2,10 +2,16 @@ import React from "react";
 import PageWrapper from "./../components/page-wrapper";
 import "./island-rab.scss";
 import headerImg from "./../img/headers/page_header_03.jpg";
+import Map from "./../components/map";
 
 export default function IslandRabPage(props) {
   return (
     <PageWrapper headerImage={headerImg}>
+      <div className="island">
+        <div style={{ height: "200px", width: "100%" }}>
+          <Map />
+        </div>
+      </div>
       <div className="row">
         <div className="col-8 order-8">
           <div className="property-details">

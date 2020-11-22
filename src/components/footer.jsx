@@ -1,53 +1,16 @@
 import React from "react";
 // import { HashLink as Link } from "react-router-hash-link";
-import GoogleMapReact from "google-map-react";
+import Map from "./../components/map";
 import "./footer.scss";
 
 export default function Footer(props) {
   const currentDate = new Date();
-  const loc = {
-    center: {
-      lat: 44.828537,
-      lng: 14.748109
-    },
-    marker: {
-      lat: 44.828537,
-      lng: 14.748109
-    },
-    zoom: 11
-  };
-
-  const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-  let mapOptions = {
-    scrollwheel: false,
-    mapTypeControlOptions: {
-      position: "BOTTOM_RIGHT"
-    },
-    draggable: false,
-    rotateControl: false,
-    scaleControl: false,
-    streetViewControl: false,
-    panControl: false,
-    zoomControlOptions: false
-  };
 
   return (
     <footer style={{ flexShrink: 0 }}>
       {props.location.pathname === "/contact-us" && (
         <div style={{ height: "400px", width: "100%" }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_KEY }}
-            defaultCenter={loc.center}
-            defaultZoom={loc.zoom}
-            options={mapOptions}
-          >
-            <AnyReactComponent
-              lat={loc.marker.lat}
-              lng={loc.marker.lng}
-              text="My Marker"
-            ></AnyReactComponent>
-          </GoogleMapReact>
+          <Map />
         </div>
       )}
       <section className="footer-info">
