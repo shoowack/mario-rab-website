@@ -1,6 +1,6 @@
 import React from "react";
 import "./apartment.scss";
-import bedroomIcon from "./../img/bedroom.svg";
+import * as accomodationIcons from "./../img/accomodation-icons";
 import headerImage from "./../img/headers/page_header_03.jpg";
 
 export default function ApartmentPage(props) {
@@ -32,10 +32,14 @@ export default function ApartmentPage(props) {
                       {apartments[apartmentNumber].title}
                     </h3>
                     <div className="property-map">
-                      <iframe src="https://maps.google.com/maps?q=44.828537,14.748109&amp;num=1&amp;ie=UTF8&amp;ll=44.828537,14.748109&amp;spn=0.007843,0.013937&amp;t=m&amp;z=12&amp;output=embed"></iframe>
+                      <iframe
+                        title="mapEl"
+                        src="https://maps.google.com/maps?q=44.828537,14.748109&amp;num=1&amp;ie=UTF8&amp;ll=44.828537,14.748109&amp;spn=0.007843,0.013937&amp;t=m&amp;z=12&amp;output=embed"
+                      ></iframe>
                       <a
                         href="https://maps.google.com/maps?ll=44.828537,14.748109&z=12&t=m&hl=en-US&gl=US&mapclient=embed&q=44%C2%B049%2742.7%22N%2014%C2%B044%2753.2%22E@44.828537,14.748109"
                         target="_blank"
+                        rel="noreferrer"
                         className="map-btn"
                       >
                         <i className="fa fa-search-plus"></i>
@@ -107,11 +111,55 @@ export default function ApartmentPage(props) {
                       {apartments[apartmentNumber].details
                         .additionalServices && (
                         <ul className="custom-list check-list">
-                          {apartments[
-                            apartmentNumber
-                          ].details.additionalServices.map((item) => (
-                            <li>{item}</li>
-                          ))}
+                          {Object.entries(
+                            apartments[apartmentNumber].details
+                              .additionalServices
+                          ).map((checkListItem, index) => {
+                            let [key, value] = checkListItem;
+
+                            if (key === "balcony") {
+                              key = "Balcony/Loggia";
+                            }
+                            if (key === "fridge") {
+                              key = "Fridge";
+                            }
+                            if (key === "grill") {
+                              key = "Grill";
+                            }
+                            if (key === "oven") {
+                              key = "Oven";
+                            }
+                            if (key === "garden") {
+                              key = "Garden";
+                            }
+                            if (key === "seaView") {
+                              key = "Sea View";
+                            }
+                            if (key === "parking") {
+                              key = "Parking";
+                            }
+                            if (key === "internetConnection") {
+                              key = "Internet Connection";
+                            }
+                            if (key === "radioSateliteTv") {
+                              key = "Radio/Satelite TV";
+                            }
+                            if (key === "separateToilet") {
+                              key = "Separate Toilet";
+                            }
+                            if (key === "childrenFriendly") {
+                              key = "Children Friendly";
+                            }
+
+                            return (
+                              <li
+                                key={index}
+                                className={value === false ? "unchecked" : ""}
+                              >
+                                {key}
+                              </li>
+                            );
+                          })}
                         </ul>
                       )}
                     </div>
@@ -280,49 +328,56 @@ export default function ApartmentPage(props) {
 
                 <div className="accomodation">
                   {Object.entries(apartments[apartmentNumber].accomodation).map(
-                    (entry) => {
-                      let [key, value] = entry;
+                    (accomodation, index) => {
+                      let [key, value] = accomodation;
                       let img;
 
                       if (key === "floor") {
                         key = "Floor Number";
+                        img = accomodationIcons.Steps;
                       }
 
                       if (key === "bedrooms") {
                         key = "Number of Bedrooms";
-                        img = bedroomIcon;
+                        img = accomodationIcons.Bed;
                       }
 
                       if (key === "bathrooms") {
                         key = "Number of Bathrooms";
+                        img = accomodationIcons.BathTub;
                       }
 
                       if (key === "bbq") {
                         key = "You can use";
                         value = "BBQ";
+                        img = accomodationIcons.BBQ;
                       }
 
                       if (key === "wifi") {
                         key = "Available";
                         value = "WiFi";
+                        img = accomodationIcons.WiFi;
                       }
 
                       if (key === "parkings") {
                         key = "Parking spots";
+                        img = accomodationIcons.ParkingSpot;
                       }
 
                       if (key === "aircon") {
                         key = "Aircon";
                         value = "Available";
+                        img = accomodationIcons.Aircon;
                       }
 
                       if (key === "washingMachine" && value === true) {
                         key = "Washing machine";
                         value = "Available";
+                        img = accomodationIcons.Washer;
                       }
 
                       return (
-                        <div className="accomodation_item">
+                        <div className="accomodation_item" key={index}>
                           <figure>
                             <img src={img} alt="" />
                             <figcaption>{key}</figcaption>

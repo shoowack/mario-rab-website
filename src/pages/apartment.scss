@@ -60,6 +60,36 @@
     padding: 30px;
   }
 
+  .check-list {
+    margin-top: 24px;
+
+    > li {
+      position: relative;
+      margin-top: 4px;
+      padding-left: 24px;
+
+      &:before {
+        content: "\f00c";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 14px;
+        font-family: FontAwesome;
+        line-height: 1;
+        color: var(--main_highlight_color);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      &.unchecked:before {
+        left: 1px; content: "\f00d";
+        color: var(--main_color);
+      }
+    }
+  }
+  
+
+  
 
   .property-location-details .property-info-title { margin: 0 0 10px 0; font-size: 1.5em; }
   .property-location-details .toggle-title { position: relative; margin: 0; padding: 10px 30px 10px 0; font-size: 1.125em; cursor: pointer; }
@@ -216,6 +246,11 @@
   figcaption {
     margin-top: 1em;
   }
+
+  figure {
+    margin: 24px 0 0 0;
+  }
+
   h3 {
     margin-top: .5em;
     margin-bottom: 1em;
