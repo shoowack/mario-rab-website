@@ -137,7 +137,7 @@ export default function MainNavigation({ scrollWithOffset }) {
                   smooth
                   className="dropdown-item"
                   activeClassName="active"
-                  to="/apartment-1#"
+                  to="/apartment/1#"
                 >
                   Apartment 1
                 </Link>
@@ -145,7 +145,7 @@ export default function MainNavigation({ scrollWithOffset }) {
                   smooth
                   className="dropdown-item"
                   activeClassName="active"
-                  to="/apartment-2#"
+                  to="/apartment/2#"
                 >
                   Apartment 2
                 </Link>
@@ -153,7 +153,7 @@ export default function MainNavigation({ scrollWithOffset }) {
                   smooth
                   className="dropdown-item"
                   activeClassName="active"
-                  to="/apartment-3#"
+                  to="/apartment/3#"
                 >
                   Apartment 3
                 </Link>

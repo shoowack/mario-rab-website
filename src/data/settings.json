@@ -20,40 +20,42 @@
     "restaurantDistance": "10m",
     "postOfficeDistance": "800m"
   },
-  "apartment1": {
-    "title": "Apartment 1",
-    "details": {
-      "accomodation": {
-        "beds": "4+6",
-        "peopleAllowed": "20",
-        "bathrooms": "2"
+  "apartments": {
+    "1": {
+      "title": "Apartment 1",
+      "details": {
+        "accomodation": {
+          "beds": "4+6",
+          "peopleAllowed": "20",
+          "bathrooms": "2"
+        },
+        "additionalServices": [
+          "Balcony/Loggia",
+          "Fridge",
+          "Grill",
+          "Oven",
+          "Garden",
+          "Sea View",
+          "Parking",
+          "Internet Connection",
+          "Radio/Satelite TV",
+          "Separate Toilet",
+          "Children Friendly"
+        ]
       },
-      "additionalServices": [
-        "Balcony/Loggia",
-        "Fridge",
-        "Grill",
-        "Oven",
-        "Garden",
-        "Sea View",
-        "Parking",
-        "Internet Connection",
-        "Radio/Satelite TV",
-        "Separate Toilet",
-        "Children Friendly"
-      ]
-    },
-    "description": "Lijep apartman od 120m2 za 9 osoba u kući na mirnoj lokaciji. 2 spavaće sobe (jedan bračni krevet i krevet “na kat”), 2 kupaonice, dnevni boravak s kuhinjom, dvorište sa grilom, terasa, parking. Pogodno za obitelj, idealno za 4 osobe. Pristojbena taksa je uključena u cijenu.",
-    "prices": {},
-    "rating": 4,
-    "accomodation": {
-      "floor": 0,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "bbq": true,
-      "wifi": true,
-      "parkings": 2,
-      "aircon": true,
-      "washingMachine": true
+      "description": "Lijep apartman od 120m2 za 9 osoba u kući na mirnoj lokaciji. 2 spavaće sobe (jedan bračni krevet i krevet “na kat”), 2 kupaonice, dnevni boravak s kuhinjom, dvorište sa grilom, terasa, parking. Pogodno za obitelj, idealno za 4 osobe. Pristojbena taksa je uključena u cijenu.",
+      "prices": {},
+      "rating": 4,
+      "accomodation": {
+        "floor": 0,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "bbq": true,
+        "wifi": true,
+        "parkings": 2,
+        "aircon": true,
+        "washingMachine": true
+      }
     }
   }
 }
