@@ -137,6 +137,7 @@
   .property-details .property-images.single-image .images-footer .prev-btn { display: none; }
   .property-details .property-images.single-image.no-description .images-footer { display: none; }
   .property-details .property-description { margin-right: -15px; padding-right: 30px; border-right: 1px solid transparent; }
+  
   .property-details .description-text > *:first-child { margin: 0; }
   .property-details .useful-info { margin-top: 50px; }
   .property-details .useful-info > *:first-child { margin: 0; }
@@ -151,8 +152,8 @@
   .property-details .tabs-container .tab-content-list { padding: 20px 0 0 0; border-width: 3px 0 0 0; }
   .property-details .tabs-container .comments { margin-top: 0; }
   .property-details .tabs-container .comments .comment:first-child { margin-top: 0; }
-  .property-details .property-panel { margin-left: -16px; border-left: 1px solid transparent; }
-  .property-details .property-panel .panel-item { padding: 26px 0 26px 30px; border-top: 1px solid transparent; }
+  .property-details .property-panel { margin-left: -16px; border-left: 1px solid #f3f3f3; }
+  .property-details .property-panel .panel-item { padding: 26px 0 26px 30px; border-top: 1px solid #f3f3f3; }
   .property-details .property-panel .panel-item:first-child {
     @include media-breakpoint-up(md) {
       padding-top: 0; border-top: 0;
@@ -169,8 +170,10 @@
   .property-details .property-panel .object-owner .portrait img { display: block; border-radius: 5px; }
   .property-details .property-panel .object-owner .name { position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 10px 4px 38px; border-radius: 0 0 5px 5px; font-size: 0.875em; }
   .property-details .property-panel .object-owner .name i { display: block; position: absolute; top: 4px; left: 10px; width: 22px; height: 22px; }
-  .property-details .property-panel .object-price .price { margin: 10px 0 0 0; }
-  .property-details .property-panel .object-price .price strong { font-size: 2.25em; }
+  .property-details .property-panel .object-price .price { text-align: center; margin-top: 30px; }
+  .property-details .property-panel .object-price .price strong { font-size: 2.25em; color: var(--main_highlight_color); }
+  .property-details .property-panel .object-price .price span { display: block; margin-bottom: 10px;}
+
   .property-details .property-panel .book-form,
   .property-details .property-panel .contact-form	{ max-width: 300px; }
   .property-details .property-panel .book-form .form-row,

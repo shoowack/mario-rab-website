@@ -44,7 +44,16 @@
         }
       },
       "description": "Lijep apartman od 120m2 za 9 osoba u kući na mirnoj lokaciji. 2 spavaće sobe (jedan bračni krevet i krevet “na kat”), 2 kupaonice, dnevni boravak s kuhinjom, dvorište sa grilom, terasa, parking. Pogodno za obitelj, idealno za 4 osobe. Pristojbena taksa je uključena u cijenu.",
-      "prices": {},
+      "prices": {
+        "0": {
+          "title": "July and August",
+          "price": "120 €"
+        },
+        "1": {
+          "title": "Other months",
+          "price": "80 €"
+        }
+      },
       "rating": 4,
       "accomodation": {
         "floor": 0,

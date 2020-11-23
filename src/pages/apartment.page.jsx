@@ -220,8 +220,16 @@ export default function ApartmentPage(props) {
                       <h4 className="panel-item-title">prices_title</h4>
 
                       <p className="price">
-                        <span>Months</span>
-                        <strong>Price</strong> prices_suffix
+                        {Object.entries(apartments[apartmentNumber].prices).map(
+                          (price, index) => {
+                            return (
+                              <p class="price">
+                                <span>{price[1].title}</span>
+                                <strong>{price[1].price}</strong>
+                              </p>
+                            );
+                          }
+                        )}
                       </p>
                     </div>
                     <div className="panel-item object-rating">
