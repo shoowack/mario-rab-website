@@ -14,7 +14,8 @@ export default function HomePage(props) {
           testimonialsSection
         }
       }
-    }
+    },
+    scrollWithOffset
   } = props;
 
   return (
@@ -22,7 +23,9 @@ export default function HomePage(props) {
       {bookingFormSection && <section.BookingFormSection />}
       {rabSection && <section.RabSection />}
       {loparSection && <section.LoparSection />}
-      {servicesSection && <section.ServicesSection />}
+      {servicesSection && (
+        <section.ServicesSection scrollWithOffset={scrollWithOffset} />
+      )}
       {apartmentsSection && <section.ApartmentsSection />}
       {testimonialsSection && <section.TestimonialsSection />}
     </>

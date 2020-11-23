@@ -4,7 +4,7 @@ import "./island-rab.scss";
 import headerImg from "./../img/headers/page_header_03.jpg";
 import Map from "./../components/map";
 
-export default function IslandRabPage(props) {
+export default function IslandRabPage() {
   return (
     <PageWrapper headerImage={headerImg}>
       <div className="island">
@@ -18,7 +18,7 @@ export default function IslandRabPage(props) {
             <div className="row">
               <div className="col-md-12 p-5">
                 <h2>island-rab-title</h2>
-                <h2>Rab's History and Heritage</h2>
+                <h2 id="history">Rab's History and Heritage</h2>
                 Otok Rab bio je naseljen još u paleolitiku, starijem kamenom
                 dobu, što potvrđuju arheološki nalazi na Loparskom poluotoku.
                 <br />
@@ -80,7 +80,7 @@ export default function IslandRabPage(props) {
                 te je njegovo tijelo provučeno ulicama Rima, javno spaljeno, te
                 zajedno s njegovim pisanim radovima bačeno u Tiber.
                 <br />
-                <h2>Beaches</h2>
+                <h2 id="beaches">Beaches</h2>
                 Otok Rab poznat je po svojim pješčanim plažama, osobito na
                 Loparskom poluotoku. Ima i šljunčanih plaža, neke čak i s vrlo
                 sitnim šljunkom. Najpoznatija pješčana plaža Raba je Rajska
@@ -99,7 +99,7 @@ export default function IslandRabPage(props) {
                 plaža. Poznate nudističke plaže nalaze se i na Loparskom
                 poluotoku, Stolac, Sahara i Ciganka. CNN je otok Rab proglasio
                 najboljom svjetskom destinacijom za nudiste.
-                <h2>Active Holidays</h2>
+                <h2 id="active-holidays">Active Holidays</h2>
                 Na otoku postoji čak 157 km uređenih biciklističkih staza, te
                 144 km pješačkih staza, raj za ljubitelje biciklizma i šetnje.
                 Bicikl, kojeg u svakom mjestu možete i unajmiti, idealno je
@@ -122,7 +122,7 @@ export default function IslandRabPage(props) {
                 košarka, wellness centri, organizirani aeorobik na pijesku i
                 slično. Na nekoliko plaža nude se zanimljivi organizirani
                 sadržaji za djecu.
-                <h2>Gastronomic offer</h2>
+                <h2 id="gastronomic-offer">Gastronomic offer</h2>
                 Otok Rab je gurmanima omiljeno odredište, a najčešće namirnice u
                 rapskoj kuhinji su ribe i plodovi mora.
                 <br />
@@ -134,7 +134,7 @@ export default function IslandRabPage(props) {
                 rapska torta.
                 <br />
                 Kvalitetnih restorana i konobi ima u izobilju, u svakom mjestu.
-                <h2>Fun</h2>
+                <h2 id="fun">Fun</h2>
                 Na Rabu se organiziraju različite manifestacije, tijekom cijele
                 godine, a osobito u ljetnim mjesecima. Većina ih je u gradu
                 Rabu, no i u svim drugim mjestima.
@@ -151,7 +151,7 @@ export default function IslandRabPage(props) {
                 kafića i noćnih klubova, a oni koji doslovno traže zabavu do
                 jutra, u beach barove ili na sjeveru, na Loparskom poluotoku,
                 ili na jugu, na Pudarici beach-party club Santos.
-                <h2>island-active-arrival-title</h2>
+                <h2 id="arrival">arrival-title</h2>
                 island-active-arrival
                 <br />
                 island-copyright
