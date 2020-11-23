@@ -200,7 +200,9 @@ export default function ApartmentPage(props) {
                 <div className="col-12 col-lg-8">
                   <div className="property-description">
                     <div className="description-text">
-                      <h4>{apartments[apartmentNumber].description}</h4>
+                      <h4>string:object-description</h4>
+                      <br />
+                      <p>{apartments[apartmentNumber].description}</p>
                     </div>
                   </div>
                 </div>

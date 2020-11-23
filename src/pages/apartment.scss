@@ -164,6 +164,7 @@
   .property-details .property-panel .swap-now .button .fa { font-size: 24px; }
   .property-details .property-panel .object-rating .rating { margin: 5px 0 0 0; }
   .property-details .property-panel .object-rating .fa { margin-right: 4px; font-size: 14px; }
+  .property-details .property-panel .object-rating { color: var(--main_highlight_color); }
   .property-details .property-panel .object-owner .portrait { display: block; position: relative; float: left; max-width: 100%; }
   .property-details .property-panel .object-owner .portrait img { display: block; border-radius: 5px; }
   .property-details .property-panel .object-owner .name { position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 10px 4px 38px; border-radius: 0 0 5px 5px; font-size: 0.875em; }
