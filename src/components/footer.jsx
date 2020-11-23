@@ -19,30 +19,19 @@ export default function Footer(props) {
             <div className="col-sm-9">
               <div className="widget about-widget">
                 <div className="widget-content">
-                  <p>
-                    <img
-                      src="../img/logo.svg"
-                      style={{ height: "30px", margin: "20px 0 30px 0" }}
-                      alt=""
-                    />
-                  </p>
-                  {/* <p><img src="./dummies/logo_footer.png" alt="Casa" /></p> */}
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    <br />
-                    Enjoy your holiday the best you can!
-                  </p>
+                  <h3>Mario Rab</h3>
+                  <p>Enjoy your holiday the best you can!</p>
                 </div>
               </div>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 text-right">
               <div className="widget links-widget">
                 <h3 className="widget-title">
                   <span>Quick Links</span>
                 </h3>
                 <div className="widget-content">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col">
                       <ul className="custom-list">
                         <li>
                           <a href="index.php">Home</a>
@@ -53,13 +42,6 @@ export default function Footer(props) {
                         <li>
                           <a href="index.php#apartments">Apartments</a>
                         </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6">
-                      <ul className="custom-list">
-                        <li>Register</li>
-                        <li>Login</li>
-                        <li>Add Offer</li>
                       </ul>
                     </div>
                   </div>
