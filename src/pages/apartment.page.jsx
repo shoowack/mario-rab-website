@@ -19,6 +19,13 @@ export default function ApartmentPage(props) {
     }
   } = props;
 
+  let ratings = [];
+  for (let i = 0; i < 5; i++) {
+    i < apartments[apartmentNumber].rating
+      ? ratings.push(<i className="fa fa-star"></i>)
+      : ratings.push(<i className="fa fa-star-o"></i>);
+  }
+
   if (apartments[apartmentNumber]) {
     return (
       <PageWrapper headerImage={headerImg}>
@@ -219,13 +226,7 @@ export default function ApartmentPage(props) {
                     </div>
                     <div className="panel-item object-rating">
                       <h4 className="panel-item-title">Object Rating</h4>
-                      <p className="rating">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star-o"></i>
-                      </p>
+                      <p className="rating">{ratings}</p>
                     </div>
                     <div className="panel-item book-form">
                       <h4 className="panel-item-title">string:book-now</h4>
