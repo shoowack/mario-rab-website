@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink as Link } from "react-router-hash-link";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export default function MainNavigation({ scrollWithOffset }) {
@@ -20,6 +20,7 @@ export default function MainNavigation({ scrollWithOffset }) {
             <Link
               smooth
               className="nav-link"
+              activeClassName="active"
               to="/#"
               scroll={(el) => scrollWithOffset(el)}
             >
@@ -28,6 +29,7 @@ export default function MainNavigation({ scrollWithOffset }) {
             <Link
               smooth
               className="nav-link"
+              activeClassName="active"
               to="/rab-island#"
               scroll={(el) => scrollWithOffset(el)}
             >
@@ -99,6 +101,7 @@ export default function MainNavigation({ scrollWithOffset }) {
             <Link
               className="nav-link"
               smooth
+              activeClassName="active"
               to="/contact-us#"
               scroll={(el) => scrollWithOffset(el)}
             >

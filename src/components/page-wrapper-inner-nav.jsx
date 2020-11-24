@@ -12,7 +12,6 @@ export default function PageWrapperInnerNav({ children }) {
       >
         <div className="container">
           <div className="page-header-inner">
-            <h1>Page Title</h1>
             <BreadcrumbsComponent />
             <SubNavigation />
           </div>
