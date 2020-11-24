@@ -1,6 +1,6 @@
 import React from "react";
 import "./apartment.scss";
-import { Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import * as accomodationIcons from "./../img/accomodation-icons";
 import PageWrapper from "./../components/page-wrapper";
 import headerImg from "./../img/headers/page_header_03.jpg";
@@ -226,7 +226,7 @@ export default function ApartmentPage(props) {
                             apartments[apartmentNumber].prices
                           ).map((price, index) => {
                             return (
-                              <p class="price">
+                              <p className="price">
                                 <span>{price[1].title}</span>
                                 <strong>{price[1].price}</strong>
                               </p>
@@ -254,96 +254,41 @@ export default function ApartmentPage(props) {
                         <i className="ico fa fa-exclamation-circle"></i> Please
                         fill all fields!
                       </p>
-                      <p className="form-row">
-                        <span
-                          className="calendar-input input-left"
-                          title="Arrival"
-                        >
-                          <input
-                            type="text"
-                            name="arrival"
-                            className="required"
-                            placeholder="string:arrival"
-                            data-dateformat="m/d/y"
-                          />
-                          <i className="fa fa-calendar"></i>
-                        </span>
-                      </p>
-                      <p className="form-row">
-                        <span
-                          className="calendar-input input-left"
-                          title="Departure"
-                        >
-                          <input
-                            type="text"
-                            name="departure"
-                            className="required"
-                            placeholder="string:departure"
-                            data-dateformat="m/d/y"
-                          />
-                          <i className="fa fa-calendar"></i>
-                        </span>
-                      </p>
-                      <p className="form-row">
-                        <span className="select-box input-left" title="Adults">
-                          <select
-                            name="adults"
-                            className="required"
-                            data-placeholder="string:adults"
-                          >
-                            <option />
-                            Adults
-                            <option value="1" />1
-                            <option value="2" />2
-                            <option value="3" />3
-                            <option value="4" />4
-                            <option value="5" />5
-                            <option value="6" />6
-                            <option value="7" />7
-                            <option value="8" />8
-                            <option value="9" />9
-                          </select>
-                        </span>
-                      </p>
-                      <p className="form-row">
-                        <span
-                          className="select-box input-right"
-                          title="Children"
-                        >
-                          <select
-                            name="children"
-                            className="required"
-                            data-placeholder="string:children"
-                          >
-                            <option />
-                            Children
-                            <option value="1" />1
-                            <option value="2" />2
-                            <option value="3" />3
-                            <option value="4" />4
-                            <option value="5" />5
-                            <option value="6" />6
-                            <option value="7" />7
-                            <option value="8" />8
-                          </select>
-                        </span>
-                      </p>
-                      <p className="form-row">
-                        <span className="select-box input-right" title="Room">
-                          <select name="room" className="required">
-                            <option value="standard" />
-                            Standard Room ($37)
-                            <option value="appartment" />
-                            Appartment ($69)
-                          </select>
-                        </span>
-                      </p>
-                      <p className="form-row">
-                        <Button>
+
+                      <Form>
+                        <Form.Group>
+                          <Form.Label>string:arrival</Form.Label>
+                          <Form.Control type="date" />
+                        </Form.Group>
+                        <Form.Group>
+                          <Form.Label>string:departure</Form.Label>
+                          <Form.Control type="date" />
+                        </Form.Group>
+                        <Form.Group>
+                          <Form.Label>string:adults</Form.Label>
+                          <Form.Control as="select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </Form.Control>
+                        </Form.Group>
+                        <Form.Group>
+                          <Form.Label>string:children</Form.Label>
+                          <Form.Control as="select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </Form.Control>
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
                           <i className="fa fa-check"></i>{" "}
                           string:make-reservation
                         </Button>
-                      </p>
+                      </Form>
                     </div>
                   </div>
                 </div>

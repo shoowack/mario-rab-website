@@ -21,8 +21,12 @@ export default function HomePage(props) {
   return (
     <>
       {bookingFormSection && <section.BookingFormSection />}
-      {rabSection && <section.RabSection />}
-      {loparSection && <section.LoparSection />}
+      {rabSection || loparSection ? (
+        <section.RabLoparSection
+          rabSection={rabSection}
+          loparSection={loparSection}
+        />
+      ) : null}
       {servicesSection && (
         <section.ServicesSection scrollWithOffset={scrollWithOffset} />
       )}
