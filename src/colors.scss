@@ -6,7 +6,7 @@
   --grey-rgb:                      242,242,242;
   --main_color:                    #1e1e24;
   --main_color_transparent:        rgba($main_color, .9);
-  --main_color_darken:             darken($main_color, 15%);
+  --main_color_darken:             #000;
   --main_highlight_color:          #01CD9E;
   --main_highlight_color_darken:   darken($main_highlight_color, 10%);
   --error_color:                   rgba(255,50,50,1);

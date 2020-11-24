@@ -22,19 +22,19 @@
       background-color: #FFF;
       transition: .25s all;
 
+      &:hover {
+        margin-top: -5px;
+        padding-bottom: 25px;
+        text-decoration: none;
+        transition: .25s all;
+      }
+
       &.active{
         color: #FFF;
         margin-top: -5px;
         padding-bottom: 25px;
         text-decoration: none;
         background-color: var(--main_highlight_color);
-      }
-
-      &:hover {
-        margin-top: -5px;
-        padding-bottom: 25px;
-        text-decoration: none;
-        transition: .25s all;
       }
     }
   }

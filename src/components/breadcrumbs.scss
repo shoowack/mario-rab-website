@@ -2,12 +2,12 @@
   background-color: var(--main_color) !important;
   float: right;
   margin-top: 36px;
-  padding: 10px 14px;
+  padding: 10px 14px !important;
   // max-width: 50%;
-  border-radius: 7px;
+  border-radius: 7px !important;
   margin-top: 50px; 
 
   .active {
-    color: #FFF;
+    color: #FFF !important;
   }
 }
