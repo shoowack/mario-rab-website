@@ -1,6 +1,6 @@
 import React from "react";
-import "./lopar-rab.scss";
 import { Button } from "react-bootstrap";
+import "./lopar-rab.scss";
 
 export default function RabSection() {
   return (
@@ -19,15 +19,9 @@ export default function RabSection() {
           Other than the small town of Rab, there are 7 idyllic places on the
           island situated on different parts of the island: Barbat, Banjol,
           Palit, Kampor, Mundanije, Supetarska Draga and <strong>Lopar</strong>.
-          <p className="cta-button">
-            <a href="rab_cta_read_more_link" className="button">
-              rab_cta_read_more
-            </a>
-          </p>
-          <a href="rab_cta_read_more_link" className="btn btn-primary">
-            rab_cta_read_more
-          </a>
-          <Button variant="primary">Primary</Button>
+          <br />
+          <br />
+          <Button>rab_cta_read_more</Button>
         </div>
       </div>
       <div className="onama-bg hero"></div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import PageWrapperInnerNav from "../components/page-wrapper-inner-nav";
 
 export default function AboutUsPage(props) {
@@ -23,11 +24,9 @@ export default function AboutUsPage(props) {
                   Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus
                   pharetra nulla ac diam.
                 </p>
-                <p className="cta-button">
-                  <a href="#" className="button">
-                    <i className="fa fa-heart"></i> Get Started!
-                  </a>
-                </p>
+                <Button>
+                  <i className="fa fa-heart"></i> Get Started!
+                </Button>
               </div>
               <div className="col-sm-6">
                 <p>
@@ -57,11 +56,9 @@ export default function AboutUsPage(props) {
                   Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi.
                   Cras vel lorem. Etiam pellentesque aliquet tellus.
                 </p>
-                <p className="cta-button">
-                  <a href="#" className="button">
-                    <i className="fa fa-heart"></i> Get Started!
-                  </a>
-                </p>
+                <Button>
+                  <i className="fa fa-heart"></i> Get Started!
+                </Button>
               </div>
             </div>
           </div>

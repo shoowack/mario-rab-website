@@ -63,16 +63,14 @@ export default function ServicesSection({ scrollWithOffset }) {
                     className="info"
                     dangerouslySetInnerHTML={{ __html: content }}
                   ></p>
-                  <p>
-                    <Link
-                      className="button"
-                      smooth
-                      scroll={(el) => scrollWithOffset(el)}
-                      to={`/rab-island#${icon}`}
-                    >
-                      Read More
-                    </Link>
-                  </p>
+                  <Link
+                    className="btn btn-primary"
+                    smooth
+                    scroll={(el) => scrollWithOffset(el)}
+                    to={`/rab-island#${icon}`}
+                  >
+                    Read More
+                  </Link>
                 </div>
               </div>
             );

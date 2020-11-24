@@ -1,13 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-// @import "colors.scss";
-// @import "forms.scss";
-
-// @import "bootstrap/dist/scss/_variables.scss"
-
-// $primary: #01cd9e;
-$primary: red !important;
-
-
 #root, html, body {
   height: 100%;
 }
@@ -18,8 +8,6 @@ $primary: red !important;
 }
 
 body {
-  background: #f3f3f3;
-  color: #999999;
   padding-top: 56px;
   font-family: 'Varela Round', sans-serif;
 }
@@ -29,6 +17,7 @@ a {
 }
 
 .button {
+  background: red;
   display: inline-block;
   position: relative;
   top: 0;
@@ -37,7 +26,13 @@ a {
   border-radius: 7px;
   cursor: pointer;
   color: #fff;
-  background-color: #01cd9e;
+  -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+}
+
+.btn {
+  // border: 0;
   -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
   -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
   box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);

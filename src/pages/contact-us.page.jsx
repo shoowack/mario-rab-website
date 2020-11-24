@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import PageWrapperInnerNav from "../components/page-wrapper-inner-nav";
 import "./contact-us.scss";
 
@@ -89,14 +90,9 @@ export default function ContactUsPage(props) {
                       <p className="form-note">All fields are required</p>
                     </div>
                     <div className="col-sm-12">
-                      <p className="form-submit">
-                        <button
-                          className="button submit-btn"
-                          data-loading-label="Sending..."
-                        >
-                          <i className="fa fa-envelope"></i> string:send-message
-                        </button>
-                      </p>
+                      <Button>
+                        <i className="fa fa-envelope"></i> string:send-message
+                      </Button>
                     </div>
                   </div>
                 </div>

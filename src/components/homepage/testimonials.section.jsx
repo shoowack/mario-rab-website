@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
+import { Button } from "react-bootstrap";
 import "./../slick.scss";
 import "./../slick-theme.scss";
 import "./testimonials.scss";
@@ -66,18 +67,15 @@ export default function TestimonialsSection() {
             </Slider>
 
             <div className="navigation">
-              <button
-                className="button prev"
-                onClick={() => slider.current.slickPrev()}
-              >
+              <Button onClick={() => slider.current.slickPrev()}>
                 <i className="fa fa-chevron-left"></i>
-              </button>
-              <button
-                className="button next ml-2"
+              </Button>
+              <Button
+                className="ml-2"
                 onClick={() => slider.current.slickNext()}
               >
                 <i className="fa fa-chevron-right"></i>
-              </button>
+              </Button>
             </div>
           </div>
         </div>

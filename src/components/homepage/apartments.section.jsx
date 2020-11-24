@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./apartments.scss";
 
 export default function ApartmentsSection() {
@@ -62,11 +63,7 @@ export default function ApartmentsSection() {
           <div className="col-md-6">
             <h2>string:apartment 1</h2>
             <p>string:apartment1-description</p>
-            <p className="cta-button">
-              <a href="/apartment-1" className="button">
-                string:cta-more
-              </a>
-            </p>
+            <Button variant="primary">string:cta-more</Button>
           </div>
           <div className="col-md-6">
             <a href="#" className="col-md-4">
@@ -117,11 +114,7 @@ export default function ApartmentsSection() {
           <div className="col-md-6">
             <h2>string:apartment 2</h2>
             <p>string:apartment2-description</p>
-            <p className="cta-button">
-              <a href="/apartment-2" className="button">
-                string:cta-more
-              </a>
-            </p>
+            <Button variant="primary">string:cta-more</Button>
           </div>
         </div>
       </section>
@@ -130,11 +123,7 @@ export default function ApartmentsSection() {
           <div className="col-md-6">
             <h2>string:apartment 3</h2>
             <p>string:apartment3-description</p>
-            <p className="cta-button">
-              <a href="/apartment-3" className="button">
-                string:cta-more
-              </a>
-            </p>
+            <Button variant="primary">string:cta-more</Button>
           </div>
           <div className="col-md-6">
             <div className="col-md-4">

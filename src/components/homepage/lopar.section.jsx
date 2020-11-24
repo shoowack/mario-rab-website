@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./lopar-rab.scss";
 
 export default function LoparSection() {
@@ -70,11 +71,9 @@ export default function LoparSection() {
           stone-cutter and founder of republic of San Marino, who was born in
           Lopar in the 4th century. In his honor, hotel settlement and motor
           camp bear name "San Marino".
-          <p className="cta-button">
-            <a href="lopar_cta_read_more_link" className="button">
-              lopar_cta_read_more
-            </a>
-          </p>
+          <br />
+          <br />
+          <Button>lopar_cta_read_more</Button>
         </div>
       </div>
     </section>

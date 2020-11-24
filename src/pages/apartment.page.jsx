@@ -1,5 +1,6 @@
 import React from "react";
 import "./apartment.scss";
+import { Button } from "react-bootstrap";
 import * as accomodationIcons from "./../img/accomodation-icons";
 import PageWrapper from "./../components/page-wrapper";
 import headerImg from "./../img/headers/page_header_03.jpg";
@@ -205,37 +206,41 @@ export default function ApartmentPage(props) {
 
               <div className="row">
                 <div className="col-12 col-lg-8">
-                  <div className="property-description">
-                    <div className="description-text">
-                      <h4>string:object-description</h4>
-                      <br />
-                      <p>{apartments[apartmentNumber].description}</p>
+                  {apartments[apartmentNumber].description && (
+                    <div className="property-description">
+                      <div className="description-text">
+                        <h4>string:object-description</h4>
+                        <br />
+                        <p>{apartments[apartmentNumber].description}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
                 <div className="col-12 col-lg-4">
                   <div className="property-panel">
-                    <div className="panel-item object-price">
-                      {/* DODAT IF, da ne pokazuje nista ako je prazno */}
-                      <h4 className="panel-item-title">prices_title</h4>
-
-                      <p className="price">
-                        {Object.entries(apartments[apartmentNumber].prices).map(
-                          (price, index) => {
+                    {apartments[apartmentNumber].prices && (
+                      <div className="panel-item object-price">
+                        <h4 className="panel-item-title">prices_title</h4>
+                        <p className="price">
+                          {Object.entries(
+                            apartments[apartmentNumber].prices
+                          ).map((price, index) => {
                             return (
                               <p class="price">
                                 <span>{price[1].title}</span>
                                 <strong>{price[1].price}</strong>
                               </p>
                             );
-                          }
-                        )}
-                      </p>
-                    </div>
-                    <div className="panel-item object-rating">
-                      <h4 className="panel-item-title">Object Rating</h4>
-                      <p className="rating">{ratings}</p>
-                    </div>
+                          })}
+                        </p>
+                      </div>
+                    )}
+                    {apartments[apartmentNumber].rating && (
+                      <div className="panel-item object-rating">
+                        <h4 className="panel-item-title">Object Rating</h4>
+                        <p className="rating">{ratings}</p>
+                      </div>
+                    )}
                     <div className="panel-item book-form">
                       <h4 className="panel-item-title">string:book-now</h4>
                       <form
@@ -334,10 +339,10 @@ export default function ApartmentPage(props) {
                         </span>
                       </p>
                       <p className="form-row">
-                        <button className="button submit-btn">
+                        <Button>
                           <i className="fa fa-check"></i>{" "}
                           string:make-reservation
-                        </button>
+                        </Button>
                       </p>
                     </div>
                   </div>
