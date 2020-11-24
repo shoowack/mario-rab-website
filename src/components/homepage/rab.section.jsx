@@ -1,5 +1,6 @@
 import React from "react";
 import "./lopar-rab.scss";
+import { Button } from "react-bootstrap";
 
 export default function RabSection() {
   return (
@@ -23,6 +24,10 @@ export default function RabSection() {
               rab_cta_read_more
             </a>
           </p>
+          <a href="rab_cta_read_more_link" className="btn btn-primary">
+            rab_cta_read_more
+          </a>
+          <Button variant="primary">Primary</Button>
         </div>
       </div>
       <div className="onama-bg hero"></div>

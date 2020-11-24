@@ -77,7 +77,7 @@ export default function BookingFormSection() {
                       type="submit"
                       name="submit"
                       id="posalji"
-                      className="button"
+                      className="btn btn-primary"
                     >
                       <i className="fa fa-search"></i> Send
                     </button>

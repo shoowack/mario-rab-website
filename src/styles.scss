@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import "colors.scss";
-@import "forms.scss";
+// @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+// @import "colors.scss";
+// @import "forms.scss";
+
+// @import "bootstrap/dist/scss/_variables.scss"
+
+// $primary: #01cd9e;
+$primary: red !important;
+
 
 #root, html, body {
   height: 100%;
