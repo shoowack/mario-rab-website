@@ -4,7 +4,6 @@ import * as pages from "./pages";
 import MainNavigation from "./components/main-navigation";
 import Footer from "./components/footer";
 import "./styles.scss";
-import "./forms.scss";
 
 export default function App() {
   let settings = require("./data/settings.json");
