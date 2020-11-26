@@ -284,7 +284,7 @@ export default function ApartmentPage(props) {
                             <option>5</option>
                           </Form.Control>
                         </Form.Group>
-                        <Button variant="primary" type="submit">
+                        <Button type="submit">
                           <i className="fa fa-check"></i>{" "}
                           string:make-reservation
                         </Button>

@@ -6,7 +6,7 @@
       "loparSection": true,
       "servicesSection": true,
       "apartmentsSection": true,
-      "testimonialsSection": true
+      "testimonialsSection": false
     }
   },
   "address": {

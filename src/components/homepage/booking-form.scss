@@ -6,177 +6,18 @@
 
   .banner-search {
     position: absolute;
-    left: 0;
     bottom: 0;
-    width: 100%;
-  
-    @media (max-width: 480px) {
-      bottom: 20px;
-    }
-  
-    &-inner {
-      padding: 0 70px;
-      @media (max-width: 1199px) {
-        padding: 0;
-      }
-    }
-  
-    .tab-title {
-      float: left;
-      margin-right: 2px;
-      border-radius: 7px 7px 0 0;
-      cursor: pointer;
-      -webkit-transition: padding 300ms ease-in-out, margin 300ms ease-in-out;
-      -moz-transition: padding 300ms ease-in-out, margin 300ms ease-in-out;
-      -ms-transition: padding 300ms ease-in-out, margin 300ms ease-in-out;
-      -o-transition: padding 300ms ease-in-out, margin 300ms ease-in-out;
-      transition: padding 300ms ease-in-out, margin 300ms ease-in-out;
-      color: #FFF;
-      background-color: var(--main_color);
-  
-      @media (max-width: 767px) {
-        margin-bottom: 2px;
-        border-radius: 7px;
-      }
-  
-      &:hover {
-        margin-top: -5px;
-        padding-bottom: 5px;
-      }
-      &.active {
-        background-color: var(--main_highlight_color);
-        &:hover {
-          margin-top: 0;
-          padding-bottom: 0;
-        }
-         > a {
-          color: #FFF;
-        }
-      }
-      > a {
-        display: block;
-        padding: 12px 30px;
-        border: 0;
-        color: #FFF;
-      }
-    }
-  
-    .tab-content {
-      display: none;
-  
-      &-list {
-        padding: 20px 0;
-        border-bottom: 3px solid var(--main_highlight_color);
-        border-radius: 7px 7px 0 0;
-        text-align: center;
-        background-color: var(--main_color);
-  
-        @media (max-width: 991px) {
-          padding: 20px;
-        }
-      }
-      &.active {
-        display: block;
-      }
-    }
-  
-    form {
-      margin: 0;
-      text-align: center;
-  
-      > * {
-        margin: 10px 5px;
-      }
-    }
-  
-    input {
-      width: 100%;
-    }
-  
-    .email-input,
-    .search-input {
-      display: inline-block;
-      width: 100%;
-      max-width: 250px;
-      position: relative;
-    }
-  
-    .calendar-input {
-      max-width: 150px;
-      text-align: left;
-    }
-  
-    .select-box {
-      max-width: 120px;
-      text-align: left;
-  
-      .select-clone {
-        border: 0;
-      }
-      .fa {
-        color: var(--main_highlight_color);
-      }
-  
-      .select-clone {
-        background-color: var(--main_color_darken);
-  
-        > li {
-          color: #999999;
-  
-          &:hover {
-            color: #FFF;
-            background-color: var(--main_highlight_color);
-          }
-        }
-      }
-    }
-  
-    .submit-btn {
-      @media (max-width: 1199px) {
-        display: block;
-      }
-    }
-  
-    /* FORM */
-    input[type=email],
-    input[type=date],
-    input[type=text],
-    input[type=password],
-    select {
-      color: #999999;
-      background-color: var(--main_color_darken);
-    }
-  
-    input[type=text].active,
-    input[type=password].active {
-      border-color: var(--main_highlight_color);
-    }
-  
-    .calendar-input .fa {
-      color: var(--main_highlight_color);
-    }
-  
-    .ui-datepicker {
-      &-header {
-        color: #999999;
-        background: var(--main_color_darken);
-      }
-      &-calendar td {
-        color: #999999;
-        background-color: var(--main_color_darken);
-  
-        a {
-          color: #999999;
-  
-          &:hover {
-            color: #FFF;
-            background-color: var(--main_highlight_color);
-          }
-        }
-        .ui-datepicker-unselectable {
-          color: #534e50;
-        }
-      }
-    }
+    border-bottom: 3px solid var(--main_highlight_color);
+    border-radius: 7px 7px 0 0;
+    background-color: var(--main_color);
+  }
+ 
+  input[type=email],
+  input[type=date],
+  input[type=text],
+  input[type=password],
+  select {
+    color: #999999;
+    background-color: var(--main_color_darken);
   }
 }
