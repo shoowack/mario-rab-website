@@ -32,12 +32,7 @@ export default function BookingFormSection() {
     <div id="banner" style={{ height: "500px" }}>
       <Container>
         <div className="banner-search px-md-5 py-md-4 w-100">
-          <Form
-            onSubmit={handleSubmit}
-            name="contact"
-            netlify="true"
-            data-netlify="true"
-          >
+          <Form onSubmit={handleSubmit}>
             <Form.Group
               as={Col}
               sm={12}
