@@ -32,7 +32,7 @@ export default function BookingFormSection() {
     <div id="banner" style={{ height: "500px" }}>
       <Container>
         <div className="banner-search px-md-5 py-md-4 w-100">
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} name="contact">
             <Form.Group
               as={Col}
               sm={12}
