@@ -5,17 +5,6 @@ section {
   position: relative;
   height: auto;
 
-  .hero {
-    display: block;
-    position: absolute;
-    top: 0;
-    height: 100%;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
   .gal {
     position: relative;
     top: 0;
@@ -36,26 +25,32 @@ section {
 
   &.rab,
   &.lopar {
-    padding: 10em 0;
+    background: var(--white);
+    color: #555;
 
     .col-md-8,
     .col-md-4 {
       z-index: 1;
     }
+
+    .hero {
+      background: transparent;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 100%;
+  
+      @media (max-width: 768px) {
+        display: none;
+      }  
+    }
   }
 
   &.rab  {
-    background: var(--white);
-    color: #555;
-
-    .onama-bg {
-      background: transparent;
-      background-position: left center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
     .hero {
+      background-position: left center !important;
       right: 0;
       width: 70%;
 
@@ -79,15 +74,8 @@ section {
   }
 
   &.lopar {
-    background: var(--white);
-    color: #555;
-
-    .onama-bg {
-      // background: transparent url(/lopar.jpg) right center no-repeat;
-      background-size: cover;
-    }
-
     .hero {
+      background-position: right center !important;
       left: 0;
       width: 50%;
 

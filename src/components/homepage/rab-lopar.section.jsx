@@ -10,7 +10,7 @@ export default function RabLoparSection(props) {
   return (
     <>
       {rabSection && (
-        <section className="rab">
+        <section className="rab py-3 py-md-5">
           <div className="container">
             <div className="col-md-8">
               <h2>Rab</h2>
@@ -39,7 +39,7 @@ export default function RabLoparSection(props) {
         </section>
       )}
       {loparSection && (
-        <section className="lopar">
+        <section className="lopar py-3 py-md-5">
           <div
             className="onama-bg hero"
             style={{ background: `url(${loparBg})` }}
