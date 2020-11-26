@@ -32,18 +32,12 @@ export default function RabLoparSection(props) {
               <Button>rab_cta_read_more</Button>
             </div>
           </div>
-          <div
-            className="onama-bg hero"
-            style={{ background: `url(${rabBg})` }}
-          ></div>
+          <div className="hero" style={{ background: `url(${rabBg})` }}></div>
         </section>
       )}
       {loparSection && (
         <section className="lopar py-3 py-md-5">
-          <div
-            className="onama-bg hero"
-            style={{ background: `url(${loparBg})` }}
-          ></div>
+          <div className="hero" style={{ background: `url(${loparBg})` }}></div>
           <div className="container">
             <div className="col-md-8 offset-md-4">
               <h2>Lopar</h2>
@@ -55,7 +49,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.rab-visit.com/hr/aktivnosti/plaze/ciganka-421/421"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Ciganka
               </a>
@@ -63,7 +57,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.rab-visit.com/hr/aktivnosti/plaze/sahara-419/419"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Sahara
               </a>
@@ -71,7 +65,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.rab-visit.com/hr/aktivnosti/plaze/stolac-422/422"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Stolac
               </a>
@@ -79,7 +73,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.rab-visit.com/hr/aktivnosti/plaze/rajska-plaza/413"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Rajska plaža-paradise beach
               </a>
@@ -91,7 +85,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.rapska-plovidba.hr/plovni_en.html"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Stinica-Mišnjak
               </a>
@@ -99,7 +93,7 @@ export default function RabLoparSection(props) {
               <a
                 href="http://www.jadrolinija.hr/jadro-valbiska/index.html"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Valbiska (island of Krk)-Lopar
               </a>
