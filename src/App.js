@@ -18,7 +18,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <div style={{ flex: "1 0 auto" }}>
-        <MainNavigation scrollWithOffset={scrollWithOffset} />
+        <MainNavigation
+          {...(settings && { settings })}
+          scrollWithOffset={scrollWithOffset}
+        />
         <Switch>
           <Route
             exact
