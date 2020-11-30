@@ -61,8 +61,6 @@ export default function ContactUsPage(props) {
             </Col>
             <Col sm={7} style={{ borderLeft: "1px solid #e6e6e6" }}>
               <div className="contact-form-container">
-                <h5>string:contact-us-send-us-a-message</h5>
-
                 <p
                   className="alert-message warning validation"
                   style={{ display: "none" }}
@@ -82,8 +80,10 @@ export default function ContactUsPage(props) {
 
                 <Form
                   onSubmit={handleSubmit}
-                  className="px-2 py-3 px-md-5 py-md-4 banner-search"
+                  className="px-2 pb-3 px-md-5 pb-md-4"
                 >
+                  <h5 className="pb-3">string:contact-us-send-us-a-message</h5>
+
                   <Row>
                     <Form.Group as={Col} sm={6}>
                       <Form.Label className="ml-2">Your name:</Form.Label>
