@@ -2,7 +2,9 @@ import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-export default function MainNavigation({ scrollWithOffset }) {
+export default function MainNavigation(props) {
+  const { scrollWithOffset, settings } = props;
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
@@ -71,32 +73,22 @@ export default function MainNavigation({ scrollWithOffset }) {
               </Link>
             </NavDropdown>
 
-            <NavDropdown title="Apartments">
-              <Link
-                smooth
-                className="dropdown-item"
-                activeClassName="active"
-                to="/apartment/1#"
-              >
-                Apartment 1
-              </Link>
-              <Link
-                smooth
-                className="dropdown-item"
-                activeClassName="active"
-                to="/apartment/2#"
-              >
-                Apartment 2
-              </Link>
-              <Link
-                smooth
-                className="dropdown-item"
-                activeClassName="active"
-                to="/apartment/3#"
-              >
-                Apartment 3
-              </Link>
-            </NavDropdown>
+            {Object.keys(settings.apartments).length && (
+              <NavDropdown title="Apartments">
+                {Object.entries(settings.apartments).map((apartment) => {
+                  return (
+                    <Link
+                      smooth
+                      className="dropdown-item"
+                      activeClassName="active"
+                      to={`/apartment/${apartment[0]}#`}
+                    >
+                      {apartment[1].title}
+                    </Link>
+                  );
+                })}
+              </NavDropdown>
+            )}
 
             <Link
               className="nav-link"

@@ -17,7 +17,7 @@ export default function BookingFormSection() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...form })
     })
-      .then((res) => alert("Success!"))
+      .then((res) => alert("Success!")) // TODO redirect to thank you page
       .catch((error) => alert(error));
 
     e.preventDefault();
