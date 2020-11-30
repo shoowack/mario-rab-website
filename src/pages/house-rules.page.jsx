@@ -4,8 +4,8 @@ import PageWrapperInnerNav from "../components/page-wrapper-inner-nav";
 export default function HouseRulesPage(props) {
   return (
     <PageWrapperInnerNav>
-      <section class="content-section py-5">
-        <div class="container">
+      <section className="content-section py-5">
+        <div className="container">
           <h2>string:house-rules-title</h2>
           <h5>Lorem Ipsum</h5>
 
@@ -22,7 +22,7 @@ export default function HouseRulesPage(props) {
 
           <p>
             Tijekom svog boravka gosti mogu koristiti vanjski roštilj, ugljen
-            sami osiguravaju, a nakon upotrebe roštilja isti očistiti iz obzira
+            sami osiguravaju, a nakon upotrebe roštilja isti očistiti iz obziras
             prema drugim korisnicima. Molimo na oprez prilikom rukovanja
             roštiljem, nakon završetka korištenja molimo vodom politi žar zbog
             sigurnosti.

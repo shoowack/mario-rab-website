@@ -80,6 +80,7 @@ export default function IslandRabPage() {
                 te je njegovo tijelo provučeno ulicama Rima, javno spaljeno, te
                 zajedno s njegovim pisanim radovima bačeno u Tiber.
                 <br />
+                <br />
                 <h2 id="beaches">Beaches</h2>
                 Otok Rab poznat je po svojim pješčanim plažama, osobito na
                 Loparskom poluotoku. Ima i šljunčanih plaža, neke čak i s vrlo
@@ -87,6 +88,8 @@ export default function IslandRabPage() {
                 plaža na Loparskom poluotoku, s brojnom i raznolikom ponudom
                 dodatnih sadržaja, no na tom je poluotoku još mnogo drugih
                 lijepih pješčanih plaža.
+                <br />
+                <br />
                 <h2>Island's Nudism</h2>
                 Tradicija nudizma na otoku Rabu seže još na prijelaz iz 19. u
                 20. stoljeće, no svakako je najznačajniji događaj za razvoj
@@ -99,6 +102,8 @@ export default function IslandRabPage() {
                 plaža. Poznate nudističke plaže nalaze se i na Loparskom
                 poluotoku, Stolac, Sahara i Ciganka. CNN je otok Rab proglasio
                 najboljom svjetskom destinacijom za nudiste.
+                <br />
+                <br />
                 <h2 id="active-holidays">Active Holidays</h2>
                 Na otoku postoji čak 157 km uređenih biciklističkih staza, te
                 144 km pješačkih staza, raj za ljubitelje biciklizma i šetnje.
@@ -122,6 +127,8 @@ export default function IslandRabPage() {
                 košarka, wellness centri, organizirani aeorobik na pijesku i
                 slično. Na nekoliko plaža nude se zanimljivi organizirani
                 sadržaji za djecu.
+                <br />
+                <br />
                 <h2 id="gastronomic-offer">Gastronomic offer</h2>
                 Otok Rab je gurmanima omiljeno odredište, a najčešće namirnice u
                 rapskoj kuhinji su ribe i plodovi mora.
@@ -134,6 +141,8 @@ export default function IslandRabPage() {
                 rapska torta.
                 <br />
                 Kvalitetnih restorana i konobi ima u izobilju, u svakom mjestu.
+                <br />
+                <br />
                 <h2 id="fun">Fun</h2>
                 Na Rabu se organiziraju različite manifestacije, tijekom cijele
                 godine, a osobito u ljetnim mjesecima. Većina ih je u gradu
@@ -151,6 +160,8 @@ export default function IslandRabPage() {
                 kafića i noćnih klubova, a oni koji doslovno traže zabavu do
                 jutra, u beach barove ili na sjeveru, na Loparskom poluotoku,
                 ili na jugu, na Pudarici beach-party club Santos.
+                <br />
+                <br />
                 <h2 id="arrival">arrival-title</h2>
                 island-active-arrival
                 <br />

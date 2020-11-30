@@ -4,8 +4,8 @@ import PageWrapperInnerNav from "../components/page-wrapper-inner-nav";
 export default function TermsPage(props) {
   return (
     <PageWrapperInnerNav>
-      <section class="content-section py-5">
-        <div class="container">
+      <section className="content-section py-5">
+        <div className="container">
           <h2>string:terms-title</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
