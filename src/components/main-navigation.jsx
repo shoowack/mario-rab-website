@@ -75,9 +75,10 @@ export default function MainNavigation(props) {
 
             {Object.keys(settings.apartments).length && (
               <NavDropdown title="Apartments">
-                {Object.entries(settings.apartments).map((apartment) => {
+                {Object.entries(settings.apartments).map((apartment, index) => {
                   return (
                     <Link
+                      key={index}
                       smooth
                       className="dropdown-item"
                       activeClassName="active"

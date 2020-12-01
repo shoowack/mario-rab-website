@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import "./booking-form.scss";
 
@@ -10,6 +10,7 @@ const encode = (data) => {
 };
 
 export default function BookingFormSection() {
+  const [modalShow, setModalShow] = useState(false);
   const [form, setForm] = useState({
     email: "",
     arrival: "",
@@ -22,7 +23,7 @@ export default function BookingFormSection() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "booking-info", ...form })
     })
-      .then((res) => alert("Success!")) // TODO redirect to thank you page
+      .then((res) => setModalShow(true))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -31,7 +32,7 @@ export default function BookingFormSection() {
   const handleChange = (e) => {
     setForm((state) => ({ ...state, [e.target.name]: e.target.value }));
   };
-  const { arrival, departure } = form;
+  const { email, arrival, departure } = form;
 
   return (
     <div id="banner" style={{ height: "500px" }}>
@@ -53,6 +54,7 @@ export default function BookingFormSection() {
                 placeholder="Enter your email"
                 required
                 name="email"
+                value={email}
                 onChange={(e) => handleChange(e)}
               />
             </Form.Group>
@@ -106,11 +108,6 @@ export default function BookingFormSection() {
                 endDate={departure && new Date(departure)}
                 minDate={arrival && new Date(arrival)}
               />
-              {/* <Form.Control
-                type="date"
-                name="departure"
-                onChange={(e) => handleChange(e)}
-              /> */}
             </Form.Group>
             <Form.Group
               as={Col}
@@ -125,6 +122,53 @@ export default function BookingFormSection() {
           </Row>
         </Form>
       </Container>
+      <Modal
+        show={modalShow}
+        onHide={() => {
+          setModalShow(false);
+          setForm({
+            email: "",
+            arrival: "",
+            departure: ""
+          });
+        }}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Inquiry received
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            We have successfully received your booking inquiry for these dates:
+            <br />
+            <br />
+            <strong>Arrival:</strong> {arrival && arrival}
+            <br />
+            <strong>Departure:</strong> {departure && departure}
+            <br />
+            <br />
+            We will get back to you at <strong>{email && email}</strong> as soon
+            as possible.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            onClick={() => {
+              setModalShow(false);
+              setForm({
+                email: "",
+                arrival: "",
+                departure: ""
+              });
+            }}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
