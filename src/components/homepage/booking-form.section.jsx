@@ -34,6 +34,8 @@ export default function BookingFormSection() {
   };
   const { arrival, departure } = form;
 
+  console.log(form);
+
   return (
     <div id="banner" style={{ height: "500px" }}>
       <Container>
@@ -67,18 +69,21 @@ export default function BookingFormSection() {
               <Form.Control
                 as={DatePicker}
                 placeholderText="Choose arrival date"
-                selected={arrival}
+                selected={arrival && new Date(arrival)}
                 required
                 showPopperArrow={false}
                 minDate={new Date()}
                 onChange={(date) => {
                   handleChange({
-                    target: { name: "arrival", value: date }
+                    target: {
+                      name: "arrival",
+                      value: date.toDateString()
+                    }
                   });
                 }}
                 selectsStart
-                startDate={arrival}
-                endDate={departure}
+                startDate={arrival && new Date(arrival)}
+                endDate={departure && new Date(departure)}
               />
             </Form.Group>
             <Form.Group
@@ -91,18 +96,18 @@ export default function BookingFormSection() {
               <Form.Control
                 as={DatePicker}
                 placeholderText="Choose departure date"
-                selected={departure}
+                selected={departure && new Date(departure)}
                 required
                 showPopperArrow={false}
                 onChange={(date) => {
                   handleChange({
-                    target: { name: "departure", value: date }
+                    target: { name: "departure", value: date.toDateString() }
                   });
                 }}
                 selectsEnd
-                startDate={arrival}
-                endDate={departure}
-                minDate={arrival}
+                startDate={arrival && new Date(arrival)}
+                endDate={departure && new Date(departure)}
+                minDate={arrival && new Date(arrival)}
               />
               {/* <Form.Control
                 type="date"
