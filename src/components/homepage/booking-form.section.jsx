@@ -15,13 +15,12 @@ export default function BookingFormSection() {
     arrival: "",
     departure: ""
   });
-  // const [startDate, setStartDate] = useState();
 
   const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...form })
+      body: encode({ "form-name": "booking-info", ...form })
     })
       .then((res) => alert("Success!")) // TODO redirect to thank you page
       .catch((error) => alert(error));
@@ -33,8 +32,6 @@ export default function BookingFormSection() {
     setForm((state) => ({ ...state, [e.target.name]: e.target.value }));
   };
   const { arrival, departure } = form;
-
-  console.log(form);
 
   return (
     <div id="banner" style={{ height: "500px" }}>
