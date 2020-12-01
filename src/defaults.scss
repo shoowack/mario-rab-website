@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 // Override default variables before the import
 $body-bg: #f3f3f3;
 $body-color: #999999;
@@ -20,5 +22,23 @@ $theme-colors: (
   "primary": #01cd9e
 );
 
+$datepicker__background-color: transparent !default;
+$datepicker__border-color: #aeaeae !default;
+$datepicker__highlighted-color: #3dcc4a !default;
+$datepicker__muted-color: darken($body-color, 20) !default;
+$datepicker__selected-color: #01cd9e !default;
+$datepicker__text-color: #fff !default;
+$datepicker__header-color: $body-color !default;
+$datepicker__navigation-disabled-color: lighten($datepicker__muted-color, 10%)
+  !default;
+
+$datepicker__border-radius: $border-radius !default;
+$datepicker__day-margin: 1px !default;
+$datepicker__font-size: .75rem !default;
+$datepicker__font-family: $font-family-sans-serif !default;
+$datepicker__item-size: 2rem !default;
+$datepicker__margin: 0 !default;
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+@import '~react-datepicker/src/stylesheets/datepicker.scss';

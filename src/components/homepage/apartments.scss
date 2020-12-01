@@ -210,7 +210,7 @@ section {
       background-color: #FFF;
 
       a {
-        color: rgba(var(--main_color), 1);
+        color: RGBA(var(--main_color), 1);
       }
 
       &.active {
@@ -286,7 +286,7 @@ section {
         //padding: 27px 150px 27px 20px; // to the left
         border-radius: 0 0 7px 7px;
         padding: 20px;
-        background-color: rgba(var(--main_color), .5);
+        background-color: RGBA(var(--main_color), .5);
         transition: all .5s;
 
         :after {

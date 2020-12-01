@@ -31,16 +31,16 @@
     </noscript>
 
     <!-- A little help for the Netlify post-processing bots -->
-    <form name="contact-us" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="email" name="email" />
       <input type="date" name="arrival" />
       <input type="date" name="departure" />
+    </form>
+
+    <form name="contact-us" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
     </form>
 
     <div id="root"></div>

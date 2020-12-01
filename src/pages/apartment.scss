@@ -93,7 +93,7 @@
         strong {
           position: absolute;
           right: 0;
-          color: var(--main_color);
+          color: RGB(var(--main_color));
         }
       }
 
@@ -120,7 +120,7 @@
     
           &.unchecked:before {
             left: 1px; content: "\f00d";
-            color: var(--main_color);
+            color: RGB(var(--main_color));
           }
         }
       }

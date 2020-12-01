@@ -7,7 +7,7 @@
 
   .banner-search {
     border-bottom: 3px solid var(--main_highlight_color);
-    background-color: var(--main_color);
+    background-color: var(--main_color_transparent);
     border-radius: 7px 7px 0 0;  
   }
  
@@ -18,5 +18,115 @@
   select {
     color: #999999;
     background-color: var(--main_color_darken);
+  }
+  
+  .react-datepicker {
+    border: none;
+    padding: 10px;
+    background-color: var(--main_color_transparent);
+
+    &-wrapper {
+      display: block;
+      position: relative;
+
+      &:before {
+        content: '\f073';
+        font-size: 18px;
+        font-family: FontAwesome;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        width: 18px;
+        height: 22px;
+        z-index: 1;
+      }
+    }
+
+    &__navigation {
+      top: 10px;
+
+      &--previous,
+      &--next {
+        border: none;
+        width: 37px;
+        height: 37px;
+
+        &:before {
+          font-family: FontAwesome;
+          position: absolute;
+          cursor: pointer;
+          color: var(--main_highlight_color);
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          text-indent: 0;
+          line-height: 38px;
+        }
+      }
+
+      &--previous {
+        left: 10px;
+
+        &:before {
+          content: '\f053';
+        }
+      }
+
+      &--next {
+        right: 10px;
+
+        &:before {
+          content: "\f054";
+        }
+      }
+    }
+
+    &__header {
+      border-bottom: none;
+      padding-top: unset;
+    }
+
+    &__current-month {
+      background-color: var(--main_color_darken);
+      padding: .5rem;
+      border-radius: 7px;
+    }
+
+    &-popper {
+      z-index: 10;
+    }
+  }
+
+  .react-datepicker__day,
+  .react-datepicker__month-text,
+  .react-datepicker__quarter-text,
+  .react-datepicker__year-text {
+    background-color: var(--main_color_darken);
+    border-radius: 2px;
+
+    &:hover {
+      background-color: lighten(#01cd9e, 12);
+      color: #000;
+    }
+
+    &--selected,
+    &--in-selecting-range,
+    &--in-range {
+      background-color: darken(#01cd9e, 12);
+      color: #000;
+    }
+   
+    &--in-selecting-range:not(&--in-range) {
+      background-color: var(--main_highlight_color);
+      color: #000;
+    }
+
+    &--disabled {
+      &:hover {
+        background-color: var(--main_color_darken);
+        color: #666;
+      }
+    }
   }
 }

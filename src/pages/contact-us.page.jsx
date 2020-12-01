@@ -17,7 +17,7 @@ export default function ContactUsPage(props) {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-us", ...form })
     })
-      .then((res) => alert("Success!")) // TODO redirect to thank you page
+      .then((res) => alert("Success!")) // TODO redirect to thank you page, or show success block above form
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -81,6 +81,7 @@ export default function ContactUsPage(props) {
                 <Form
                   onSubmit={handleSubmit}
                   className="px-2 pb-3 px-md-5 pb-md-4"
+                  data-netlify-recaptcha="true"
                 >
                   <h5 className="pb-3">string:contact-us-send-us-a-message</h5>
 
@@ -89,7 +90,7 @@ export default function ContactUsPage(props) {
                       <Form.Label className="ml-2">Your name:</Form.Label>
                       <Form.Control
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="John Doe"
                         required
                         name="name"
                         value={name}
@@ -101,6 +102,8 @@ export default function ContactUsPage(props) {
                       <Form.Control
                         type="email"
                         name="email"
+                        required
+                        placeholder="email@domain.com"
                         value={email}
                         onChange={(e) => handleChange(e)}
                       />
@@ -110,6 +113,7 @@ export default function ContactUsPage(props) {
                       <Form.Control
                         as="textarea"
                         rows={3}
+                        required
                         name="message"
                         value={message}
                         onChange={(e) => handleChange(e)}

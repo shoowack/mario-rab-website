@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import DatePicker from "react-datepicker";
 import "./booking-form.scss";
 
 const encode = (data) => {
@@ -9,7 +10,12 @@ const encode = (data) => {
 };
 
 export default function BookingFormSection() {
-  const [form, setForm] = useState({ email: "", arrival: "", departure: "" });
+  const [form, setForm] = useState({
+    email: "",
+    arrival: "",
+    departure: ""
+  });
+  // const [startDate, setStartDate] = useState();
 
   const handleSubmit = (e) => {
     fetch("/", {
@@ -26,7 +32,7 @@ export default function BookingFormSection() {
   const handleChange = (e) => {
     setForm((state) => ({ ...state, [e.target.name]: e.target.value }));
   };
-  const { email, arrival, departure } = form;
+  const { arrival, departure } = form;
 
   return (
     <div id="banner" style={{ height: "500px" }}>
@@ -45,10 +51,9 @@ export default function BookingFormSection() {
               <Form.Label className="ml-2">Email</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="Enter email"
+                placeholder="Enter your email"
                 required
                 name="email"
-                value={email}
                 onChange={(e) => handleChange(e)}
               />
             </Form.Group>
@@ -60,10 +65,20 @@ export default function BookingFormSection() {
             >
               <Form.Label className="ml-2">Arrival</Form.Label>
               <Form.Control
-                type="date"
-                name="arrival"
-                value={arrival}
-                onChange={(e) => handleChange(e)}
+                as={DatePicker}
+                placeholderText="Choose arrival date"
+                selected={arrival}
+                required
+                showPopperArrow={false}
+                minDate={new Date()}
+                onChange={(date) => {
+                  handleChange({
+                    target: { name: "arrival", value: date }
+                  });
+                }}
+                selectsStart
+                startDate={arrival}
+                endDate={departure}
               />
             </Form.Group>
             <Form.Group
@@ -74,11 +89,26 @@ export default function BookingFormSection() {
             >
               <Form.Label className="ml-2">Departure</Form.Label>
               <Form.Control
+                as={DatePicker}
+                placeholderText="Choose departure date"
+                selected={departure}
+                required
+                showPopperArrow={false}
+                onChange={(date) => {
+                  handleChange({
+                    target: { name: "departure", value: date }
+                  });
+                }}
+                selectsEnd
+                startDate={arrival}
+                endDate={departure}
+                minDate={arrival}
+              />
+              {/* <Form.Control
                 type="date"
                 name="departure"
-                value={departure}
                 onChange={(e) => handleChange(e)}
-              />
+              /> */}
             </Form.Group>
             <Form.Group
               as={Col}
