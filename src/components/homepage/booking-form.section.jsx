@@ -23,7 +23,7 @@ export default function BookingFormSection() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "booking-info", ...form })
     })
-      .then((res) => setModalShow(true))
+      .then(() => setModalShow(true))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -113,10 +113,10 @@ export default function BookingFormSection() {
               as={Col}
               sm={12}
               md={2}
-              className="m-0 px-4 px-md-2 py-3 py-md-0 text-center"
+              className="m-0 px-4 px-md-2 py-3 py-md-0 text-center align-self-end"
             >
               <Button type="submit">
-                <i className="fa fa-send"></i> string:make-reservation
+                <i className="fa fa-send"></i> string:inquiry
               </Button>
             </Form.Group>
           </Row>
@@ -165,7 +165,7 @@ export default function BookingFormSection() {
               });
             }}
           >
-            Close
+            string:close
           </Button>
         </Modal.Footer>
       </Modal>
