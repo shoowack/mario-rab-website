@@ -33,7 +33,11 @@ export default function Footer(props) {
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={3} className="text-center text-md-right">
+            <Col
+              sm={12}
+              md={3}
+              className="text-center text-md-right mt-4 mt-md-0"
+            >
               <div className="widget links-widget">
                 <h3 className="widget-title">
                   <span>Quick Links</span>
