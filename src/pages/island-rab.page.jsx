@@ -1,5 +1,6 @@
 import React from "react";
 import PageWrapper from "./../components/page-wrapper";
+import { Row, Col } from "react-bootstrap";
 import "./island-rab.scss";
 import headerImg from "./../img/headers/page_header_03.jpg";
 import Map from "./../components/map";
@@ -12,11 +13,11 @@ export default function IslandRabPage() {
           <Map />
         </div>
       </div>
-      <div className="row">
-        <div className="col-8 order-8">
+      <Row>
+        <Col sm={{ span: 12, order: 1 }} md={{ span: 8, order: 2 }}>
           <div className="property-details">
-            <div className="row">
-              <div className="col-md-12 p-5">
+            <Row>
+              <Col md={12} className="p-5">
                 <h2 className="mb-4 text-center">island-rab-title</h2>
                 island-rab
                 <h2 className="mt-5 mb-4 text-center" id="history">
@@ -82,8 +83,6 @@ export default function IslandRabPage() {
                 godine, navodno prirodnom smrću. Posmrtno je osuđen kao heretik,
                 te je njegovo tijelo provučeno ulicama Rima, javno spaljeno, te
                 zajedno s njegovim pisanim radovima bačeno u Tiber.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center" id="beaches">
                   Beaches
                 </h2>
@@ -93,8 +92,6 @@ export default function IslandRabPage() {
                 plaža na Loparskom poluotoku, s brojnom i raznolikom ponudom
                 dodatnih sadržaja, no na tom je poluotoku još mnogo drugih
                 lijepih pješčanih plaža.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center">Island's Nudism</h2>
                 Tradicija nudizma na otoku Rabu seže još na prijelaz iz 19. u
                 20. stoljeće, no svakako je najznačajniji događaj za razvoj
@@ -107,8 +104,6 @@ export default function IslandRabPage() {
                 plaža. Poznate nudističke plaže nalaze se i na Loparskom
                 poluotoku, Stolac, Sahara i Ciganka. CNN je otok Rab proglasio
                 najboljom svjetskom destinacijom za nudiste.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center" id="active-holidays">
                   Active Holidays
                 </h2>
@@ -134,8 +129,6 @@ export default function IslandRabPage() {
                 košarka, wellness centri, organizirani aeorobik na pijesku i
                 slično. Na nekoliko plaža nude se zanimljivi organizirani
                 sadržaji za djecu.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center" id="gastronomic-offer">
                   Gastronomic offer
                 </h2>
@@ -150,8 +143,6 @@ export default function IslandRabPage() {
                 rapska torta.
                 <br />
                 Kvalitetnih restorana i konobi ima u izobilju, u svakom mjestu.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center" id="fun">
                   Fun
                 </h2>
@@ -171,30 +162,28 @@ export default function IslandRabPage() {
                 kafića i noćnih klubova, a oni koji doslovno traže zabavu do
                 jutra, u beach barove ili na sjeveru, na Loparskom poluotoku,
                 ili na jugu, na Pudarici beach-party club Santos.
-                <br />
-                <br />
                 <h2 className="mt-5 mb-4 text-center" id="arrival">
                   arrival-title
                 </h2>
                 island-active-arrival
                 <br />
                 island-copyright
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
-        </div>
-        <div className="col-4 order-4">
-          <div className="row">
-            <div className="col-md-12">
+        </Col>
+        <Col sm={{ span: 12, order: 2 }} md={{ span: 4, order: 1 }}>
+          <Row>
+            <Col>
               {/* gallerija */}
               <a href="">
                 <img src="" alt="" />
               </a>
               {/* gallerija */}
-            </div>
-          </div>
-        </div>
-      </div>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </PageWrapper>
   );
 }
