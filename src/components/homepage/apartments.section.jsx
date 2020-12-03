@@ -5,7 +5,7 @@ import "./apartments.scss";
 export default function ApartmentsSection() {
   return (
     <>
-      <section id="browse">
+      <section id="apartments">
         <div className="container">
           <h2 className="textalign-center">string:apartments</h2>
           <br />

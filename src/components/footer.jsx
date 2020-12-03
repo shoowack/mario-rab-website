@@ -1,67 +1,94 @@
 import React from "react";
-// import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink as Link } from "react-router-hash-link";
+import { Container, Row, Col } from "react-bootstrap";
 import Map from "./../components/map";
 import "./footer.scss";
 
 export default function Footer(props) {
+  const {
+    location: { pathname },
+    scrollWithOffset
+  } = props;
   const currentDate = new Date();
 
   return (
     <footer style={{ flexShrink: 0 }}>
-      {props.location.pathname === "/contact-us" && (
+      {pathname === "/contact-us" && (
         <div style={{ height: "400px", width: "100%" }}>
           <Map />
         </div>
       )}
       <section className="footer-info">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-9">
+        <Container>
+          <Row>
+            <Col
+              sm={12}
+              md={9}
+              className="align-self-center text-center text-md-left"
+            >
               <div className="widget about-widget">
                 <div className="widget-content">
                   <h3>Mario Rab</h3>
-                  <p>Enjoy your holiday the best you can!</p>
+                  <p className="m-0">Enjoy your holiday the best you can!</p>
                 </div>
               </div>
-            </div>
-            <div className="col-sm-3 text-right">
+            </Col>
+            <Col sm={12} md={3} className="text-center text-md-right">
               <div className="widget links-widget">
                 <h3 className="widget-title">
                   <span>Quick Links</span>
                 </h3>
                 <div className="widget-content">
-                  <div className="row">
-                    <div className="col">
-                      <ul className="custom-list">
+                  <Row>
+                    <Col>
+                      <ul className="custom-list m-0">
                         <li>
-                          <a href="index.php">Home</a>
+                          <Link
+                            smooth
+                            to="/#"
+                            scroll={(el) => scrollWithOffset(el)}
+                          >
+                            Home
+                          </Link>
                         </li>
                         <li>
-                          <a href="island.php">Island</a>
+                          <Link
+                            smooth
+                            to="/rab-island#"
+                            scroll={(el) => scrollWithOffset(el)}
+                          >
+                            Island Rab
+                          </Link>
                         </li>
                         <li>
-                          <a href="index.php#apartments">Apartments</a>
+                          <Link
+                            smooth
+                            to="/#apartments"
+                            scroll={(el) => scrollWithOffset(el)}
+                          >
+                            Apartments
+                          </Link>
                         </li>
                       </ul>
-                    </div>
-                  </div>
+                    </Col>
+                  </Row>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       <section className="copyright">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <p className="m-0">
+        <Container>
+          <Row>
+            <Col>
+              <p className="m-0 text-center text-md-left">
                 Copyright {currentDate.getFullYear()} &copy; Mario - Rab. All
                 rights reserved.
               </p>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </footer>
   );

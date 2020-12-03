@@ -17,8 +17,11 @@ export default function IslandRabPage() {
           <div className="property-details">
             <div className="row">
               <div className="col-md-12 p-5">
-                <h2>island-rab-title</h2>
-                <h2 id="history">Rab's History and Heritage</h2>
+                <h2 className="mb-4 text-center">island-rab-title</h2>
+                island-rab
+                <h2 className="mt-5 mb-4 text-center" id="history">
+                  Rab's History and Heritage
+                </h2>
                 Otok Rab bio je naseljen još u paleolitiku, starijem kamenom
                 dobu, što potvrđuju arheološki nalazi na Loparskom poluotoku.
                 <br />
@@ -81,7 +84,9 @@ export default function IslandRabPage() {
                 zajedno s njegovim pisanim radovima bačeno u Tiber.
                 <br />
                 <br />
-                <h2 id="beaches">Beaches</h2>
+                <h2 className="mt-5 mb-4 text-center" id="beaches">
+                  Beaches
+                </h2>
                 Otok Rab poznat je po svojim pješčanim plažama, osobito na
                 Loparskom poluotoku. Ima i šljunčanih plaža, neke čak i s vrlo
                 sitnim šljunkom. Najpoznatija pješčana plaža Raba je Rajska
@@ -90,7 +95,7 @@ export default function IslandRabPage() {
                 lijepih pješčanih plaža.
                 <br />
                 <br />
-                <h2>Island's Nudism</h2>
+                <h2 className="mt-5 mb-4 text-center">Island's Nudism</h2>
                 Tradicija nudizma na otoku Rabu seže još na prijelaz iz 19. u
                 20. stoljeće, no svakako je najznačajniji događaj za razvoj
                 nudizma bila posjeta engleskog kralja Edwarda VIII i njegove
@@ -104,7 +109,9 @@ export default function IslandRabPage() {
                 najboljom svjetskom destinacijom za nudiste.
                 <br />
                 <br />
-                <h2 id="active-holidays">Active Holidays</h2>
+                <h2 className="mt-5 mb-4 text-center" id="active-holidays">
+                  Active Holidays
+                </h2>
                 Na otoku postoji čak 157 km uređenih biciklističkih staza, te
                 144 km pješačkih staza, raj za ljubitelje biciklizma i šetnje.
                 Bicikl, kojeg u svakom mjestu možete i unajmiti, idealno je
@@ -129,7 +136,9 @@ export default function IslandRabPage() {
                 sadržaji za djecu.
                 <br />
                 <br />
-                <h2 id="gastronomic-offer">Gastronomic offer</h2>
+                <h2 className="mt-5 mb-4 text-center" id="gastronomic-offer">
+                  Gastronomic offer
+                </h2>
                 Otok Rab je gurmanima omiljeno odredište, a najčešće namirnice u
                 rapskoj kuhinji su ribe i plodovi mora.
                 <br />
@@ -143,7 +152,9 @@ export default function IslandRabPage() {
                 Kvalitetnih restorana i konobi ima u izobilju, u svakom mjestu.
                 <br />
                 <br />
-                <h2 id="fun">Fun</h2>
+                <h2 className="mt-5 mb-4 text-center" id="fun">
+                  Fun
+                </h2>
                 Na Rabu se organiziraju različite manifestacije, tijekom cijele
                 godine, a osobito u ljetnim mjesecima. Većina ih je u gradu
                 Rabu, no i u svim drugim mjestima.
@@ -162,7 +173,9 @@ export default function IslandRabPage() {
                 ili na jugu, na Pudarici beach-party club Santos.
                 <br />
                 <br />
-                <h2 id="arrival">arrival-title</h2>
+                <h2 className="mt-5 mb-4 text-center" id="arrival">
+                  arrival-title
+                </h2>
                 island-active-arrival
                 <br />
                 island-copyright

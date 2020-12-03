@@ -29,6 +29,10 @@
       display: block;
       position: relative;
 
+      input {
+        padding-right: 40px;
+      }
+
       &:before {
         content: '\f073';
         font-size: 18px;
